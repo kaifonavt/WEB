@@ -114,3 +114,97 @@ h1, h2, h3 {
     background-color: #1a1a2e;
     color: white;
 }
+.form-section {
+    margin: 1rem 0;
+}
+
+fieldset {
+    border: 2px solid #0f3460;
+    padding: 1.5rem;
+    border-radius: 6px;
+    margin-bottom: 1rem;
+}
+
+legend {
+    padding: 0 0.5rem;
+    font-weight: bold;
+    color: #0f3460;
+    font-size: 1.1rem;
+}
+
+.form-group {
+    margin-bottom: 1.25rem;
+    display: flex;
+    flex-direction: column;
+}
+
+.form-group label,
+.label-heading {
+    font-weight: 600;
+    margin-bottom: 0.35rem;
+    color: #1a1a2e;
+}
+input[type="text"],
+input[type="email"],
+input[type="number"],
+input[type="date"],
+textarea {
+    width: 100%;
+    padding: 0.6rem 0.8rem;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-family: inherit;
+    font-size: 1rem;
+    background-color: white;
+    transition: border-color 0.2s ease, box-shadow 0.2s ease;
+}
+
+input[type="text"]:focus,
+input[type="email"]:focus,
+input[type="number"]:focus,
+input[type="date"]:focus,
+textarea:focus {
+    outline: none;
+    border-color: #e94560;
+    box-shadow: 0 0 0 3px rgba(233, 69, 96, 0.25);
+    background-color: #ffffff;
+}
+
+.radio-group,
+.checkbox-group {
+    flex-direction: row;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.radio-group label,
+.checkbox-group label {
+    font-weight: normal;
+    margin-bottom: 0;
+}
+
+#submit-btn {
+    background-color: #e94560;
+    color: white;
+    border: none;
+    padding: 0.75rem 1.5rem;
+    font-size: 1rem;
+    font-weight: bold;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+}
+
+#submit-btn:hover {
+    background-color: #0f3460;
+}
+
+#submit-btn:focus {
+    outline: none;
+    box-shadow: 0 0 0 3px rgba(15, 52, 96, 0.4);
+}
+.numbered-list {
+    list-style-type: decimal;
+    padding-left: 1.5rem;
+    margin-bottom: 1rem;
+}

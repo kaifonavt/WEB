@@ -20,7 +20,7 @@
     </div>
 </header>
 <main>
-<section class="table-section">
+<section class="table   -section">
     <h2>Course Schedule & Fee Overview</h2>
     <table class="data-table">
         <caption>Academic Course Schedule and Registration Rates (2026/2027)</caption>
@@ -34,26 +34,26 @@
         </thead>
         <tbody>
         <tr>
-            <th scope="row">CS-101</th>
-            <td>Introduction to Computer Science</td>
+            <th scope="row">TS-101</th>
+            <td>Introduction to Talent Science</td>
             <td>Mon / Wed 09:00 - 10:30</td>
             <td>$450</td>
         </tr>
         <tr>
-            <th scope="row">WEB-201</th>
-            <td>Web Development Fundamentals</td>
+            <th scope="row">DBC-201</th>
+            <td>Build Development Fundamentals</td>
             <td>Tue / Thu 11:00 - 12:30</td>
             <td>$500</td>
         </tr>
         <tr>
-            <th scope="row">DS-301</th>
-            <td>Data Structures &amp; Algorithms</td>
+            <th scope="row">MS-301</th>
+            <td>Music Structures &amp; Spotify Algorithms</td>
             <td>Mon / Wed 14:00 - 15:30</td>
             <td>$550</td>
         </tr>
         <tr>
-            <th scope="row">DB-102</th>
-            <td>Database Management Systems</td>
+            <th scope="row">ST-102</th>
+            <td>Streaming</td>
             <td>Friday 10:00 - 13:00</td>
             <td>$480</td>
         </tr>
@@ -76,8 +76,51 @@
         </tfoot>
     </table>
 </section>
-</main>
+    <section class="form-section">
+        <h1>Contact Us</h1>
 
+        <form action="#" method="post" class="contact-form">
+            <fieldset>
+                <legend>Contact &amp; Inquiry Details</legend>
+                <div class="form-group">
+                    <label for="full-name">Full Name:</label>
+                    <input type="text" id="full-name" name="fullName" placeholder="e.g. John Doe" maxlength="50" required>
+                </div>
+                <div class="form-group">
+                    <label for="user-email">Email Address:</label>
+                    <input type="email" id="user-email" name="userEmail" placeholder="name@example.com" required>
+                </div>
+                <div class="form-group">
+                    <label for="preferred-date">Preferred Contact Date:</label>
+                    <input type="date" id="preferred-date" name="contactDate">
+                </div>
+                <div class="form-group">
+                    <span class="label-heading">Preferred Contact Method:</span>
+                    <div class="radio-group">
+                        <input type="radio" id="pref-email" name="contactPref" value="email" checked>
+                        <label for="pref-email">Email</label>
+
+                        <input type="radio" id="pref-phone" name="contactPref" value="phone">
+                        <label for="pref-phone">Phone</label>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="user-message">Your Message:</label>
+                    <textarea id="user-message" name="userMessage" rows="5" placeholder="Write your message here..."></textarea>
+                </div>
+                <div class="form-group checkbox-group">
+                    <input type="checkbox" id="subscribe-news" name="subscribeNews" value="yes">
+                    <label for="subscribe-news">Subscribe to newsletter updates</label>
+                </div>
+                <div class="form-group">
+                    <button type="submit" id="submit-btn" class="btn-submit">Send Message</button>
+                </div>
+
+            </fieldset>
+        </form>
+
+    </section>
+</main>
 <footer>
     <p>&copy; Kaifonavt. No rights reserved. Nothing ever happens.</p>
 </footer>
