@@ -1,0 +1,71 @@
+:root {
+    --primary: grey;
+    --spacing: 1rem;
+    --radius: 8px;
+    font-family: sans-serif; }
+
+
+.navbar {
+    display: flex;
+    flex-wrap: wrap; align-items: center;
+    gap: var(--spacing);
+    padding: var(--spacing); }
+.navbar .actions {
+    margin-left: auto; }
+
+.card-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: var(--spacing);
+    align-items: stretch;
+}
+.card {
+    display: flex;
+    flex-direction: column;
+    flex: 1 1 250px; padding: var(--spacing);
+    border: 1px solid black;
+}
+.card button {
+    margin-top: auto;
+}
+
+.pagination {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    padding: var(--spacing);
+}
+.pagination .pages {
+    display: flex;
+    margin: 0 auto; gap: var(--spacing);
+}
+.pagination .results {
+    margin-left: auto;
+}
+
+.comment { display: flex;
+    gap: var(--spacing);
+    padding: var(--spacing);
+}
+.avatar {
+    flex-shrink: 0;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background: grey; }
+
+.pricing {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: var(--spacing);
+}
+.plan {
+    flex: 1 1 200px;
+    padding: 2rem;
+    border: 1px solid black;
+    text-align: center; }
+.plan.recommended {
+    padding: 3.5rem 2rem;
+    transform: scale(1.05);
+    background-color: darkgrey; }
