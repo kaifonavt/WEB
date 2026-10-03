@@ -3,43 +3,211 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Bootstrap demo</title>
+    <title>My beloved mods</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
           rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB"
           crossorigin="anonymous">
     <link rel="stylesheet" href="css/style.css">
 </head>
-
-<body>
-<h1>Assignment3</h1>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
         crossorigin="anonymous"></script>
-<section class="custom-services">
-    <div class="services-container">
-        <h2 class="services-title"> Task1 </h2>
-        <div class="services-grid">
-
-            <div class="service-card">
-                <div class="service-icon"></div>
-                <h3>Веб-разработка</h3>
-                <p></p>
+<body>
+<nav class="navbar navbar-expand-lg">
+    <a class="navbar-brand" href="#">Home</a>
+    <button class="navbar-toggler">
+        <a class="nav-link" href="#bowls">Bowls</a>
+        <a class="nav-link" href="#snacks">Snacks</a>
+        <a class="nav-link" href="#crops">Crops</a>
+        <a class="nav-link">Help</a>
+    </button>
+    <div class="collapse navbar-collapse">
+        <a class="nav-link p-1" href="#bowls">Bowls</a>
+        <a class="nav-link p-1" href="#snacks">Snacks</a>
+        <a class="nav-link p-1" href="#crops">Crops</a>
+        <a class="nav-link p-1">Help</a>
+    </div>
+</nav>
+<h1>Farmer's Delight</h1>
+<section id="bowls">
+    <div class="cards-container">
+        <h2 class="cards-title">Bowls</h2>
+        <div class="cards-grid">
+            <div class="card-custom">
+                <img class="card-image" src="media/image/fruit_salad.webp" alt="Fruit Salad">
+                <div class="card-description">
+                <h3>Fruit Salad</h3>
+                <p>Fruit Salad can be crafted with a Bowl, two Berries, two Melon Slices, one Pumpkin Slice, and an Apple. </p>
+                </div>
             </div>
-
-            <div class="service-card">
-                <div class="service-icon"></div>
-                <h3>UI/UX Дизайн</h3>
-                <p>Проектирование удобных интерфейсов с фокусом на пользовательский опыт.</p>
+            <div class="card-custom">
+                <img class="card-image" src="media/image/fish_stew.webp" alt="Fish Stew">
+                <div class="card-description">
+                    <h3>Fish Stew</h3>
+                    <p>Fish stew is made by placing any raw fish, Tomato Sauce, and an Onion in a Cooking Pot. </p>
+                </div>
             </div>
-
-            <div class="service-card">
-                <div class="service-icon"></div>
-                <h3>Техническая поддержка</h3>
-                <p>Мониторинг, обслуживание и поддержка стабильной работы сервисов.</p>
+            <div class="card-custom">
+                <img class="card-image" src="media/image/noodle_soup.webp" alt="Noodle Soup">
+                <div class="card-description">
+                    <h3>Noodle Soup</h3>
+                    <p>In a Cooking Pot, add a raw Egg, Raw Pasta, Dried Kelp and either Raw Bacon or Raw Porkchop.</p>
+                </div>
             </div>
-
+            <div class="card-custom">
+                <img class="card-image" src="media/image/pumpkin_soup.webp" alt="Pumpkin Soup">
+                <div class="card-description">
+                    <h3>Pumpkin Soup</h3>
+                    <p> In a Cooking Pot, add a Pumpkin Slice and one each of the following: Milk, Cabbage, Bacon.</p>
+                </div>
+            </div>
+            <div class="card-custom">
+            <img class="card-image" src="media/image/beef_stew.webp" alt="Beef Stew">
+            <div class="card-description">
+                <h3>Beef Stew</h3>
+                <p>Beef Stew is made by placing Minced Beef or Raw Beef, Carrot, and Potato in a Cooking Pot.</p>
+            </div>
+        </div>
+            <div class="card-custom">
+                <img class="card-image" src="media/image/pasta_with_mutton_chop.webp" alt="Pasta with Mutton Chop">
+                <div class="card-description">
+                    <h3>Pasta with Mutton</h3>
+                    <p>Pasta with Mutton Chop can be made by placing Raw Mutton Chops, Raw Pasta, and Tomato Sauce in a Cooking Pot.</p>
+                </div>
+            </div>
         </div>
     </div>
+</section>
+<div class="d-block d-md-none">
+    <p> <strong>Visible only on mobile version</strong></p>
+</div>
+<section id="snacks">
+    <div class="container">
+        <h2>Snacks</h2>
+        <div class="row g-4">
+            <div class="col-12 col-md-6 col-lg-4">
+                <div class="card">
+                    <img src="media/image/hamburger.webp" class="card-img " alt="Hamburger">
+                    <div class="card-body">
+                        <h3 class="card-title">Hamburger</h3>
+                        <p class="card-text">A hamburger can be crafted with one Bread, one Beef Patty, one Tomato, one Onion and a Cabbage Leaf.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-md-6 col-lg-4">
+                <div class="card">
+                    <img src="media/image/dumplings.webp" class="card-img" alt="Dumplings">
+                    <div class="card-body">
+                        <h3 class="card-title">Dumplings</h3>
+                        <p class="card-text">Dumplings can be made in a Cooking Pot with Wheat Dough, Cabbage or a Cabbage Leaf, Onion, and Raw Beef.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-md-6 col-lg-4">
+                <div class="card">
+                    <img src="media/image/stuffed_potato.webp" class="card-img" alt="Stuffed Potato">
+                    <div class="card-body">
+                        <h3 class="card-title">Stuffed Potato</h3>
+                        <p class="card-text">Stuffed Potato can be crafted by placing a baked potato, steak/beef patty, and milk bucket/milk bottle in a crafting grid.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-md-6 col-lg-4">
+                <div class="card">
+                    <img src="media/image/egg_sandwich.webp" alt="Egg Sandwich">
+                    <div class="card-body">
+                        <h3 class="card-title">Egg Sandwich</h3>
+                        <p class="card-text">Egg Sandwiches can be crafted using one Bread and two Fried Eggs.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-md-6 col-lg-4">
+                <div class="card">
+                    <img src="media/image/barbecue.webp" class="card-img" alt="Barbecue">
+                    <div class="card-body">
+                        <h3 class="card-title">Barbecue</h3>
+                        <p class="card-text">Barbecue on a Stick can be crafted with a Stick, Onion, Tomato, and any Cooked Meat.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-md-6 col-lg-4">
+                <div class="card">
+                    <img src="media/image/bacon_sandwich.webp" class="card-img" alt="Bacon Sandwich">
+                    <div class="card-body">
+                        <h3 class="card-title">Bacon Sandwich</h3>
+                        <p class="card-text">It can be crafted with one Bread, one Cooked Bacon, a Tomato, and a Cabbage</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<section id="crops">
+    <div class="container">
+        <h2>Crops</h2>
+        <div class="row g-4">
+            <div class="col-12 col-md-6 col-lg-4">
+                <div class="card">
+                    <img src="media/image/cabbage.webp" class="card-img" alt="">
+                    <div class="card-body">
+                        <h3 class="card-title">Cabbage</h3>
+                        <p class="card-text">Cabbages can be obtained from their wild variant which naturally generate on beaches. </p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-md-6 col-lg-4">
+                <div class="card">
+                    <img src="media/image/potato.webp" class="card-img" alt="Potato">
+                    <div class="card-body">
+                        <h3 class="card-title">Potato</h3>
+                        <p class="card-text">Wild Potatoes can be broken to obtain potatoes and can be found in cold climates</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-md-6 col-lg-4">
+                <div class="card">
+                    <img src="media/image/onion.webp" class="card-img" alt="Onion">
+                    <div class="card-body">
+                        <h3 class="card-title">Onion</h3>
+                        <p class="card-text">Onion appear as "a thick cluster of Allium flowers usually has an onion bulb under them." </p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-md-6 col-lg-4">
+                <div class="card">
+                    <img src="media/image/carrot.webp" alt="Carrot">
+                    <div class="card-body">
+                        <h3 class="card-title">Carrot</h3>
+                        <p class="card-text">They appear as "a flowering weed, with a conspicuous beige-colored base." </p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-md-6 col-lg-4">
+                <div class="card">
+                    <img src="media/image/tomato.webp" class="card-img" alt="Tomato">
+                    <div class="card-body">
+                        <h3 class="card-title">Tomato</h3>
+                        <p class="card-text">Tomatoes can be obtained via its wild variant in arid climates</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-md-6 col-lg-4">
+                <div class="card">
+                    <img src="media/image/rice.webp" class="card-img" alt="Rice">
+                    <div class="card-body">
+                        <h3 class="card-title">Rice</h3>
+                        <p class="card-text">Rice can be found growing in swamp and jungle biomes as harvestable Wild Rice</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<section id="help">
+    <h2>Helpful links</h2>
+    <ol>
+        <li><a href="https://www.curseforge.com/minecraft/mc-mods/farmers-delight"> Download </a></li>
+    </ol>
 </section>
 </body>
 </html>
