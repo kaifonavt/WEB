@@ -1,6 +1,230 @@
-body{
+body {
     font-family: 'Oswald', sans-serif;
     font-weight: 700;
     text-transform: uppercase;
     line-height: 1.1;
+}
+
+.marvel-dossier {
+    margin: 2rem 1.5rem;
+}
+
+.marvel-dossier-grid {
+    display: grid;
+    gap: 1rem;
+}
+
+.marvel-dossier-photo,
+.marvel-dossier-panel,
+.marvel-team {
+    margin: 0;
+    border: 1px solid #6c757d;
+    background: #f8f9fa;
+}
+
+.marvel-dossier-panel,
+.marvel-dossier-photo figcaption {
+    padding: 1rem;
+}
+
+.marvel-dossier-photo img,
+.marvel-team-image {
+    display: block;
+    width: 100%;
+    aspect-ratio: 4 / 3;
+    object-fit: cover;
+}
+
+.marvel-dossier h2,
+.marvel-reading h2 {
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+.marvel-dossier-panel h3 {
+    font-size: 1.25rem;
+}
+
+.marvel-dossier p,
+.marvel-team p,
+.marvel-reading p {
+    font-weight: normal;
+    text-transform: none;
+    line-height: 1.6;
+}
+
+.marvel-reading,
+.marvel-footer {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    gap: 1.5rem;
+    padding: 1.5rem;
+}
+
+.marvel-reading {
+    margin: 2rem 1.5rem;
+    border: 1px solid #ca2f3b;
+    background: #fff5f5;
+}
+
+.marvel-footer {
+    border-top: 1px solid #6c757d;
+    background: #f8f9fa;
+}
+
+.marvel-footer nav {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+
+.marvel-footer a {
+    color: #212529;
+    text-decoration: none;
+}
+
+.marvel-footer-brand {
+    font-weight: bold;
+}
+
+.marvel-footer a:hover {
+    text-decoration: underline;
+}
+
+.marvel-footer a[aria-current="page"] {
+    color: #b02a37;
+}
+
+.marvel-footer p {
+    margin: 0;
+}
+
+@media (min-width: 768px) {
+    .marvel-dossier-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+}
+
+@media (min-width: 1200px) {
+    .marvel-dossier-grid {
+        grid-template-columns: 3fr 2fr;
+    }
+
+    .marvel-dossier-photo {
+        grid-row: span 3;
+    }
+}
+
+.dc-page p,
+.dc-page li {
+    font-weight: normal;
+    text-transform: none;
+    line-height: 1.6;
+}
+
+.dc-page [id] {
+    scroll-margin-top: 7rem;
+}
+
+.dc-banner {
+    display: block;
+    width: 100%;
+    height: 100%;
+    min-height: 20rem;
+    object-fit: cover;
+    object-position: center;
+}
+
+.dc-places {
+    margin: 2rem 1.5rem;
+}
+
+.marvel-banner {
+    display: grid;
+    overflow: hidden;
+}
+
+.marvel-banner-image {
+    display: block;
+    width: 100%;
+    min-width: 0;
+    height: 100%;
+    object-fit: cover;
+}
+
+@media (min-width: 992px) {
+    .marvel-banner {
+        grid-template-columns: 1fr 2fr;
+    }
+}
+
+.dc-city-grid {
+    display: grid;
+    gap: 1rem;
+}
+
+.dc-city {
+    min-width: 0;
+    border: 1px solid #6c757d;
+    background: #f8f9fa;
+    display: flex;
+    flex-direction: column;
+}
+
+.dc-city img {
+    width: 100%;
+    aspect-ratio: 4 / 3;
+    object-fit: cover;
+}
+
+.dc-city-body {
+    padding: 1rem;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+.dc-city-body a {
+    margin-top: auto;
+}
+
+.dc-portrait {
+    width: 100%;
+    aspect-ratio: 4 / 3;
+    object-fit: cover;
+    object-position: center top;
+}
+
+.dc-league-image {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+.dc-page .accordion-button {
+    font-weight: bold;
+}
+
+.dc-page .accordion-button:not(.collapsed) {
+    color: #084298;
+    background: #e7f1ff;
+}
+
+@media (min-width: 768px) {
+    .dc-city-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+}
+
+@media (min-width: 1200px) {
+    .dc-city-grid {
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+    }
+
+    .dc-places {
+        margin-top: 3rem;
+        margin-bottom: 3rem;
+    }
 }
