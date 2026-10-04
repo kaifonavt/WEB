@@ -10,7 +10,7 @@
 <body>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
 <nav class="navbar navbar-expand-lg navbar-light bg-light shadow sticky-top d-flex">
-    <a class="navbar-brand p-2" href="./index.html">MULTIVERSE<br>ARCHIVE</a>
+    <a class="navbar-brand p-2" href="./">MULTIVERSE<br>ARCHIVE</a>
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainnavbar">
         <span class="navbar-toggler-icon"></span>
     </button>
@@ -18,45 +18,105 @@
         <ul class="navbar-nav m-1">
             <li class="nav-item p-1 m-1"><a class="nav-link" href="./marvel">Marvel</a></li>
             <li class="nav-item p-1 m-1"><a class="nav-link" href="./dc">DC</a></li>
-            <li class="nav-item p-1 m-1"><a class="nav-link" href="./new">Newbies</a></li>
+            <li class="nav-item p-1 m-1"><a class="nav-link" href="./beginers">Newbies</a></li>
             <li class="nav-item p-1 m-1"><a class="nav-link" href="./club">Club</a></li>
         </ul>
     </div>
 </nav>
-<section>
-    <div class="position-relative overflow-hidden bg-dark">
+<main>
+    <section class="position-relative overflow-hidden border-bottom border-dark min-vh-50">
         <div class="row g-0 w-100 h-100 position-absolute top-0 start-0 d-none d-lg-flex">
             <div class="col-6 h-100">
-                <img src="./media/image/dc/gotham_panel_1.jpg" class="w-100 h-100 object-fit-cover" alt="Left Art">
+                <img src="./media/image/marvel/marvel_panel.jpg" class="w-100 h-100 object-fit-cover" alt="Marvel">
             </div>
             <div class="col-6 h-100">
-                <img src="./media/image/marvel/new_york_panel_1.jpg" class="w-100 h-100 object-fit-cover" alt="Right Art">
+                <img src="./media/image/dc/dc_panel.jpg" class="w-100 h-100 object-fit-cover" alt="DC">
             </div>
         </div>
         <div class="container py-5 position-relative z-1">
-            <div class="row justify-content-center my-lg-4">
-                <div class="col-12 col-md-10 col-lg-7">
-                    <div class="bg-light text-center border border-dark rounded shadow">
-                        <h1><br></h1>
-                        <hr class="w-25 mx-auto my-3">
-                        <p class="text-secondary mb-4">
-                            <br>
-                            <br>
+            <div class="row justify-content-center my-lg-5">
+                <div class="col-12 col-md-8 col-lg-5">
+                    <div class="bg-white p-4 p-md-5 text-center border border-dark rounded-0 shadow">
+                        <h1 class="fw-bold text-uppercase display-6 mb-3">Two Universes.<br>Your First Story.</h1>
+                        <hr class="w-25 mx-auto my-3 border-dark">
+                        <p class="text-secondary small mb-4">
+                            Comics are more than entertainment. They are ideas, people, worlds, and infinite possibilities.
                         </p>
-                        <a href="./new" class="btn btn-danger my-3">
-                            Start Reading &rarr;
+                        <a href="./beginers" class="btn btn-danger rounded-0 px-4 py-2 fw-bold">Get Started</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="container-fluid px-4 my-5">
+        <div class="d-flex align-items-center justify-content-between border-bottom border-dark pb-2 mb-4">
+            <h2 class="fw-bold text-uppercase m-0 display-6">Story Archive</h2>
+            <span class="small text-uppercase fw-bold text-secondary d-none d-md-block">
+        More than comics. Entire multiverses.
+      </span>
+        </div>
+        <div class="row g-4">
+            <div class="col-12 col-lg-6 d-none d-lg-block">
+                <div class="card border-dark rounded-0 h-100 overflow-hidden">
+                    <img src="./media/image/comics_collection.jpg" class="w-100 h-100 object-fit-cover" alt="Reader">
+                </div>
+            </div>
+            <div class="col-12 col-md-6 col-lg-3">
+                <div class="card border-dark rounded-0 h-100 bg-white">
+                    <div class="ratio ratio-4x3 border-bottom border-dark">
+                        <img src="./media/image/marvel/new_york_panel_1.jpg" class="object-fit-cover" alt="Marvel">
+                    </div>
+                    <div class="card-body p-4 d-flex flex-column">
+                        <h3 class="fw-bold text-uppercase mb-2">Marvel</h3>
+                        <hr class="border-danger opacity-100 my-2">
+                        <p class="text-secondary small mb-4">
+                            Heroes. Conflicts. Big ideas. Explore the Marvel universe and discover stories tailored for everyone.
+                        </p>
+                        <a href="./marvel" class="btn btn-outline-danger rounded-0 fw-bold mt-auto align-self-start">
+                            Explore Section
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-md-6 col-lg-3">
+                <div class="card border-dark rounded-0 h-100 bg-white">
+                    <div class="ratio ratio-4x3 border-bottom border-dark">
+                        <img src="./media/image/dc/gotham_panel_1.jpg" class="object-fit-cover" alt="DC">
+                    </div>
+                    <div class="card-body p-4 d-flex flex-column">
+                        <h3 class="fw-bold text-uppercase mb-2">DC</h3>
+                        <hr class="border-primary opacity-100 my-2">
+                        <p class="text-secondary small mb-4">
+                            Dark cities. Complex choices. Unique lore. Dive deep into the DC universe and unlock new horizons.
+                        </p>
+                        <a href="./dc" class="btn btn-outline-primary rounded-0 fw-bold mt-auto align-self-start">
+                            Explore Section
                         </a>
                     </div>
                 </div>
             </div>
         </div>
+    </section>
+    <section class="container-fluid px-4 mb-5">
+        <div class="border border-dark p-4 p-md-5 d-flex flex-column flex-lg-row align-items-center justify-content-between gap-4">
+            <div class="text-start">
+                <h2 class="display-5 fw-bold text-uppercase lh-1 m-0">New to<br>Comics?</h2>
+            </div>
+            <div class="max-w-md">
+                <p class="mb-3 fw-medium">
+                    We’ll guide you through your first steps: where to start, key terminology, and curated recommendations you'll love.
+                </p>
+                <a href="./beginers" class="btn btn-dark rounded-0 fw-bold px-4 py-2">
+                    Beginner's Guide
+                </a>
+            </div>
+        </div>
+    </section>
+<footer class="bg-light py-4 border-top mt-auto">
+    <div class="container text-center text-muted">
+        &copy; 2026 Multiverse Archive. All rights reserved.
     </div>
-</section>
-<section>
-    <h1>VAULT OF STORIES</h1>
-</section>
-<footer class="d-flex align-items-center ">
-    <a>MULTIVERSE ARCHIVE</a>
 </footer>
+</main>
 </body>
 </html>
