@@ -1,0 +1,100 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Readers Club - Multiverse Archive</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <link href="css/style.css" rel="stylesheet">
+</head>
+<body class="bg-light text-dark d-flex flex-column min-vh-100">
+    
+    <nav class="navbar navbar-expand-lg navbar-light bg-light shadow sticky-top d-flex">
+        <a class="navbar-brand p-2" href="index.html">MULTIVERSE<br>ARCHIVE</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainnavbar">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse justify-content-end" id="mainnavbar">
+            <ul class="navbar-nav m-1">
+                <li class="nav-item p-1 m-1"><a class="nav-link" href="marvel.html">Marvel</a></li>
+                <li class="nav-item p-1 m-1"><a class="nav-link" href="dc.html">DC</a></li>
+                <li class="nav-item p-1 m-1"><a class="nav-link" href="beginners.html">Newbies</a></li>
+                <li class="nav-item p-1 m-1"><a class="nav-link active fw-bold" href="club.html">Club</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <main class="container py-5 flex-grow-1">
+        <div class="row justify-content-center">
+            <div class="col-12 col-lg-8">
+                <h1 class="text-center mb-4 fw-bold">Readers Club</h1>
+                
+                <section class="bg-white p-4 rounded shadow-sm border mb-5 text-center">
+                    <p class="lead text-muted mb-4">Join our community! We meet monthly to discuss recent comic arcs, share theories, and hang out with fellow fans.</p>
+                    
+                    <h3 class="h5 fw-bold mb-3 border-bottom pb-2 d-inline-block">Upcoming Meetings</h3>
+                    <ul class="list-unstyled text-start mx-auto" style="max-width: 400px;">
+                        <li class="mb-2"><strong>Nov 15:</strong> The Evolution of Gotham Villains</li>
+                        <li><strong>Nov 28:</strong> Exploring Alternate Marvel Timelines</li>
+                    </ul>
+                </section>
+
+                <section class="bg-white p-4 p-md-5 rounded shadow-sm border">
+                    <h2 class="h4 fw-bold mb-4 text-center">Join the Club</h2>
+                    
+                    <form action="#" method="POST">
+                        <div class="row g-3 mb-3">
+                            <div class="col-md-6">
+                                <label for="name" class="form-label fw-bold small">Full Name</label>
+                                <input type="text" class="form-control bg-light" id="name" placeholder="Peter Parker" required>
+                            </div>
+                            <div class="col-md-6">
+                                <label for="email" class="form-label fw-bold small">Email Address</label>
+                                <input type="email" class="form-control bg-light" id="email" placeholder="webhead@dailybugle.com" required>
+                            </div>
+                        </div>
+
+                        <div class="mb-3">
+                            <label for="universe" class="form-label fw-bold small">Favorite Universe</label>
+                            <select class="form-select bg-light" id="universe" required>
+                                <option value="" selected disabled>Choose your side...</option>
+                                <option value="marvel">Marvel</option>
+                                <option value="dc">DC</option>
+                                <option value="image">Image / Dark Horse</option>
+                                <option value="indie">Independent Comics</option>
+                            </select>
+                        </div>
+
+                        <div class="mb-3">
+                            <label for="interests" class="form-label fw-bold small">Favorite Characters / Genres</label>
+                            <input type="text" class="form-control bg-light" id="interests" placeholder="e.g., Detective stories, Batman, X-Men">
+                        </div>
+
+                        <div class="mb-3">
+                            <label for="date" class="form-label fw-bold small">Preferred Meeting Date</label>
+                            <input type="date" class="form-control bg-light" id="date" required>
+                        </div>
+
+                        <div class="mb-4">
+                            <label for="comment" class="form-label fw-bold small">About You (Optional)</label>
+                            <textarea class="form-control bg-light" id="comment" rows="3" placeholder="Tell us what you're currently reading..."></textarea>
+                        </div>
+
+                        <div class="d-grid">
+                            <button type="submit" class="btn btn-dark btn-lg fw-bold join-btn">Send Application</button>
+                        </div>
+                    </form>
+                </section>
+            </div>
+        </div>
+    </main>
+
+    <footer class="bg-light py-4 border-top mt-auto">
+        <div class="container text-center text-muted">
+            <small>&copy; 2026 Multiverse Archive. All rights reserved.</small>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+</body>
+</html>
