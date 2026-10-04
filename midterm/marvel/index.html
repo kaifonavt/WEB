@@ -18,44 +18,43 @@
         <ul class="navbar-nav m-1">
             <li class="nav-item p-1 m-1"><a class="nav-link" href="">Marvel</a></li>
             <li class="nav-item p-1 m-1"><a class="nav-link" href="../dc">DC</a></li>
-            <li class="nav-item p-1 m-1"><a class="nav-link" href="../new">Newbies</a></li>
+            <li class="nav-item p-1 m-1"><a class="nav-link" href="../beginers">Newbies</a></li>
             <li class="nav-item p-1 m-1"><a class="nav-link" href="../club">Club</a></li>
         </ul>
     </div>
 </nav>
-<section>
-    <div class="container-fluid p-0 my-3">
-        <div class="marvel-banner border border-dark border-2">
-
-            <div class="bg-danger text-white p-4 p-md-5">
-                <span class="border border-white px-2 py-1 fw-bold">
+<main>
+    <section class="container-fluid">
+        <div class="row g-0 border border-dark border-2">
+            <div class="col-12 col-lg-5 bg-danger text-white p-md-5 d-flex flex-column align-items-start">
+                <span class=" d-inline-block border border-white px-2 py-1 fw-bold">
                     MARVEL
                 </span>
-
                 <h1 class="display-4 fw-bold mt-3 mb-0">
-                    ВСЕЛЕННАЯ<br>
-                    <span class="display-2">MARVEL</span>
+                    Multiverse<br>
+                    OF HEROES
                 </h1>
             </div>
-
-            <img src="../media/image/marvel/new_york_panel_1.jpg" alt="A collage of classic Marvel comic panels" class="marvel-banner-image">
-
+            <div class="col-12 col-lg-7 p-3">
+                <p class="mt-3">
+                    Marvel Comics is a famous American comic book publisher known for creating iconic superheroes like Spider-Man, Iron Man, and the Avengers.
+                </p>
+            </div>
         </div>
-    </div>
-</section>
+    </section>
 <section>
     <div class="container-fluid px-4 my-4">
         <div class="d-flex justify-content-between align-items-end mb-4 flex-wrap gap-2">
             <div>
                 <h2 class="fw-bold m-0">Marvel Heroes.</h2>
-                <p >Heroes Marvel.</p>
+                <p >Every can be a hero.</p>
             </div>
             <a href="#" class="text-danger fw-bold text-decoration-none">Open</a>
         </div>
         <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 row-cols-xxl-5 flex-nowrap overflow-x-auto pb-4 g-3">
             <div class="col">
                 <div class="card h-100 border-secondary p-3 bg-light">
-                    <img src="../media/image/marvel/spider_man.JPG" class="card-img-top border border-dark mb-3" alt="Spider-Man">
+                    <img src="../media/image/marvel/character/spider_man/spider_man.JPG" class="card-img-top border border-dark mb-3" alt="Spider-Man">
                     <div class="card-body p-0 d-flex flex-column">
                         <h3 class="fw-bold m-0 fs-4">SPIDER-MAN</h3>
                         <p class="text-danger small fw-bold mb-2">PITER PARKER</p>
@@ -73,7 +72,7 @@
             </div>
             <div class="col">
                 <div class="card h-100 border-secondary p-3 bg-light">
-                    <img src="../media/image/marvel/ironman.JPG" class="card-img-top border border-dark mb-3" alt="Iron Man">
+                    <img src="../media/image/marvel/character/iron-man/iron_man_portrait_1.jpg" class="card-img-top border border-dark mb-3" alt="Iron Man">
                     <div class="card-body p-0 d-flex flex-column">
                         <h3 class="fw-bold m-0 fs-4">IRON MAN</h3>
                         <p class="text-danger small fw-bold mb-2">TONI STARK</p>
@@ -109,7 +108,7 @@
             </div>
             <div class="col">
                 <div class="card h-100 border-secondary p-3 bg-light">
-                    <img src="../media/image/marvel/thor.JPG" class="card-img-top border border-dark mb-3" alt="Thor">
+                    <img src="../media/image/marvel/character/thor/thor.JPG" class="card-img-top border border-dark mb-3" alt="Thor">
                     <div class="card-body p-0 d-flex flex-column">
                         <h3 class="fw-bold m-0 fs-4">THOR</h3>
                         <p class="text-danger small fw-bold mb-2">THOR ODINSON</p>
@@ -127,7 +126,7 @@
             </div>
             <div class="col">
                 <div class="card h-100 border-secondary p-3 bg-light">
-                    <img src="../media/image/marvel/black_panther.JPG" class="card-img-top border border-dark mb-3" alt="Black Panther">
+                    <img src="../media/image/marvel/character/black_panther/black_panther.JPG" class="card-img-top border border-dark mb-3" alt="Black Panther">
                     <div class="card-body p-0 d-flex flex-column">
                         <h3 class="fw-bold m-0 fs-4">BLACK PANTHER</h3>
                         <p class="text-danger small fw-bold mb-2">T’CHALLA</p>
@@ -209,14 +208,12 @@
 </section>
 <section class="container-fluid px-4 py-5"
          aria-labelledby="marvel-teams-title">
-
     <h2 id="marvel-teams-title" class="fw-bold mb-2">
         STRONGER TOGETHER
     </h2>
     <p class="mb-4">
         Different heroes. Different abilities. A shared purpose.
     </p>
-
     <div class="row g-4">
         <div class="col-12 col-lg-6">
             <article class="marvel-team h-100">
@@ -224,25 +221,21 @@
                     <div class="col-12 col-md-5">
                         <img src="../media/image/marvel/avamgers.JPG" class="marvel-team-image" alt="Iron Man, a member of the Avengers" loading="lazy">
                     </div>
-
                     <div class="col-12 col-md-7">
                         <div class="p-4 d-flex flex-column h-100">
                             <h3 class="fw-bold">THE AVENGERS</h3>
-
                             <p>
                                 When a threat is too great for one hero,
                                 the Avengers come together. Their strength
                                 comes from combining different skills
                                 and learning to work as a team.
                             </p>
-
                             <h4 class="fs-6 fw-bold">FAMILIAR MEMBERS</h4>
                             <ul class="mb-4">
                                 <li>Iron Man</li>
                                 <li>Captain America</li>
                                 <li>Thor</li>
                             </ul>
-
                             <a href="../new/"
                                class="btn btn-outline-danger mt-auto">
                                 Find your first comic
@@ -252,7 +245,6 @@
                 </div>
             </article>
         </div>
-
         <div class="col-12 col-lg-6">
             <article class="marvel-team h-100">
                 <div class="row g-0 h-100">
@@ -297,10 +289,15 @@
             Start with a character or a theme that interests you.
         </p>
     </div>
-
-    <a href="../new/" class="btn btn-danger">
+    <a href="../beginers/" class="btn btn-danger">
         Open the beginner’s guide
     </a>
 </section>
+</main>
+<footer class="bg-light py-4 border-top mt-auto">
+    <div class="container text-center text-muted">
+        &copy; 2026 Multiverse Archive. All rights reserved.
+    </div>
+</footer>
 </body>
 </html>

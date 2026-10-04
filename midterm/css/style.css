@@ -140,26 +140,6 @@ body {
 .dc-places {
     margin: 2rem 1.5rem;
 }
-
-.marvel-banner {
-    display: grid;
-    overflow: hidden;
-}
-
-.marvel-banner-image {
-    display: block;
-    width: 100%;
-    min-width: 0;
-    height: 100%;
-    object-fit: cover;
-}
-
-@media (min-width: 992px) {
-    .marvel-banner {
-        grid-template-columns: 1fr 2fr;
-    }
-}
-
 .dc-city-grid {
     display: grid;
     gap: 1rem;
