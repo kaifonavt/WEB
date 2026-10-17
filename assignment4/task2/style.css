@@ -1,0 +1,18 @@
+.form-control:user-invalid ~ .invalid-feedback,
+.form-select:user-invalid ~ .invalid-feedback,
+.form-check-input:user-invalid ~ .invalid-feedback,
+input[name="experience"]:user-invalid ~ .invalid-feedback {
+    display: block;
+}
+
+.form-control:user-invalid,
+.form-select:user-invalid,
+.form-check-input:user-invalid {
+    border-color: #dc3545;
+}
+
+.form-control:user-valid,
+.form-select:user-valid,
+.form-check-input:user-valid {
+    border-color: #198754;
+}
