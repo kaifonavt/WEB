@@ -5,22 +5,26 @@
     border-radius: 8px;
     overflow: hidden;
 }
+
 .item .image {
     background: whitesmoke;
     height: 150px;
     flex-shrink: 0;
     width: 100%;
 }
+
 .item .info {
     display: flex;
     flex-direction: column;
     flex-grow: 1;
     padding: 1rem;
 }
+
 .item .date {
     margin-top: auto;
     font-size: 0.8rem;
-    color: grey; }
+    color: grey;
+}
 
 .grid-mode {
     display: grid;
@@ -33,19 +37,23 @@
     grid-template-columns: 1fr;
     gap: 1rem;
 }
+
 .list-mode .item {
     flex-direction: row;
     align-items: center;
 }
+
 .list-mode .item .image {
     width: 150px;
     height: 100%;
 }
+
 .list-mode .info {
     flex-direction: row;
     align-items: center;
     gap: 1rem;
 }
+
 .list-mode .date {
     margin-left: auto;
     margin-top: 0;

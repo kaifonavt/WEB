@@ -140,6 +140,7 @@ body {
 .dc-places {
     margin: 2rem 1.5rem;
 }
+
 .dc-city-grid {
     display: grid;
     gap: 1rem;

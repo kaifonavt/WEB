@@ -2,118 +2,120 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/style.css">
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <link href="css/style.css" rel="stylesheet">
     <title>Title</title>
 </head>
 <body>
 <header class="site-header">
     <div class="nav-container">
-        <a href="index.html" class="brand-logo">Serega Pirat Academy</a>
-        <nav class="main-nav" aria-label="Main Navigation">
+        <a class="brand-logo" href="index.html">Serega Pirat Academy</a>
+        <nav aria-label="Main Navigation" class="main-nav">
             <ul class="nav-list">
-                <li><a href="index.html" class="nav-link">Home</a></li>
-                <li><a href="about.html" class="nav-link">About</a></li>
-                <li><a href="contact.html" class="nav-link active" aria-current="page">Contact</a></li>
+                <li><a class="nav-link" href="index.html">Home</a></li>
+                <li><a class="nav-link" href="about.html">About</a></li>
+                <li><a aria-current="page" class="nav-link active" href="contact.html">Contact</a></li>
             </ul>
         </nav>
     </div>
 </header>
 <main>
-<section class="table   -section">
-    <h2>Course Schedule & Fee Overview</h2>
-    <table class="data-table">
-        <caption>Academic Course Schedule and Registration Rates (2026/2027)</caption>
-        <thead>
-        <tr>
-            <th scope="col">Course Code</th>
-            <th scope="col">Course Name</th>
-            <th scope="col">Schedule Day &amp; Time</th>
-            <th scope="col">Standard Fee (USD)</th>
-        </tr>
-        </thead>
-        <tbody>
-        <tr>
-            <th scope="row">TS-101</th>
-            <td>Introduction to Talent Science</td>
-            <td>Mon / Wed 09:00 - 10:30</td>
-            <td>$450</td>
-        </tr>
-        <tr>
-            <th scope="row">DBC-201</th>
-            <td>Build Development Fundamentals</td>
-            <td>Tue / Thu 11:00 - 12:30</td>
-            <td>$500</td>
-        </tr>
-        <tr>
-            <th scope="row">MS-301</th>
-            <td>Music Structures &amp; Spotify Algorithms</td>
-            <td>Mon / Wed 14:00 - 15:30</td>
-            <td>$550</td>
-        </tr>
-        <tr>
-            <th scope="row">ST-102</th>
-            <td>Streaming</td>
-            <td>Friday 10:00 - 13:00</td>
-            <td>$480</td>
-        </tr>
-        <tr>
-            <th scope="row" rowspan="2">PROJ-400</th>
-            <td>Senior Capstone Project - Part A</td>
-            <td>Tuesday 15:00 - 17:00</td>
-            <td rowspan="2" class="joined-cell">$900 (Full Year Bundle)</td>
-        </tr>
-        <tr>
-            <td>Senior Capstone Project - Part B</td>
-            <td>Thursday 15:00 - 17:00</td>
-        </tr>
-        </tbody>
-        <tfoot>
-        <tr>
-            <th scope="row" colspan="3">Average Course Fee</th>
-            <td>$576</td>
-        </tr>
-        </tfoot>
-    </table>
-</section>
+    <section class="table   -section">
+        <h2>Course Schedule & Fee Overview</h2>
+        <table class="data-table">
+            <caption>Academic Course Schedule and Registration Rates (2026/2027)</caption>
+            <thead>
+            <tr>
+                <th scope="col">Course Code</th>
+                <th scope="col">Course Name</th>
+                <th scope="col">Schedule Day &amp; Time</th>
+                <th scope="col">Standard Fee (USD)</th>
+            </tr>
+            </thead>
+            <tbody>
+            <tr>
+                <th scope="row">TS-101</th>
+                <td>Introduction to Talent Science</td>
+                <td>Mon / Wed 09:00 - 10:30</td>
+                <td>$450</td>
+            </tr>
+            <tr>
+                <th scope="row">DBC-201</th>
+                <td>Build Development Fundamentals</td>
+                <td>Tue / Thu 11:00 - 12:30</td>
+                <td>$500</td>
+            </tr>
+            <tr>
+                <th scope="row">MS-301</th>
+                <td>Music Structures &amp; Spotify Algorithms</td>
+                <td>Mon / Wed 14:00 - 15:30</td>
+                <td>$550</td>
+            </tr>
+            <tr>
+                <th scope="row">ST-102</th>
+                <td>Streaming</td>
+                <td>Friday 10:00 - 13:00</td>
+                <td>$480</td>
+            </tr>
+            <tr>
+                <th rowspan="2" scope="row">PROJ-400</th>
+                <td>Senior Capstone Project - Part A</td>
+                <td>Tuesday 15:00 - 17:00</td>
+                <td class="joined-cell" rowspan="2">$900 (Full Year Bundle)</td>
+            </tr>
+            <tr>
+                <td>Senior Capstone Project - Part B</td>
+                <td>Thursday 15:00 - 17:00</td>
+            </tr>
+            </tbody>
+            <tfoot>
+            <tr>
+                <th colspan="3" scope="row">Average Course Fee</th>
+                <td>$576</td>
+            </tr>
+            </tfoot>
+        </table>
+    </section>
     <section class="form-section">
         <h1>Contact Us</h1>
 
-        <form action="#" method="post" class="contact-form">
+        <form action="#" class="contact-form" method="post">
             <fieldset>
                 <legend>Contact &amp; Inquiry Details</legend>
                 <div class="form-group">
                     <label for="full-name">Full Name:</label>
-                    <input type="text" id="full-name" name="fullName" placeholder="e.g. John Doe" maxlength="50" required>
+                    <input id="full-name" maxlength="50" name="fullName" placeholder="e.g. John Doe" required
+                           type="text">
                 </div>
                 <div class="form-group">
                     <label for="user-email">Email Address:</label>
-                    <input type="email" id="user-email" name="userEmail" placeholder="name@example.com" required>
+                    <input id="user-email" name="userEmail" placeholder="name@example.com" required type="email">
                 </div>
                 <div class="form-group">
                     <label for="preferred-date">Preferred Contact Date:</label>
-                    <input type="date" id="preferred-date" name="contactDate">
+                    <input id="preferred-date" name="contactDate" type="date">
                 </div>
                 <div class="form-group">
                     <span class="label-heading">Preferred Contact Method:</span>
                     <div class="radio-group">
-                        <input type="radio" id="pref-email" name="contactPref" value="email" checked>
+                        <input checked id="pref-email" name="contactPref" type="radio" value="email">
                         <label for="pref-email">Email</label>
 
-                        <input type="radio" id="pref-phone" name="contactPref" value="phone">
+                        <input id="pref-phone" name="contactPref" type="radio" value="phone">
                         <label for="pref-phone">Phone</label>
                     </div>
                 </div>
                 <div class="form-group">
                     <label for="user-message">Your Message:</label>
-                    <textarea id="user-message" name="userMessage" rows="5" placeholder="Write your message here..."></textarea>
+                    <textarea id="user-message" name="userMessage" placeholder="Write your message here..."
+                              rows="5"></textarea>
                 </div>
                 <div class="form-group checkbox-group">
-                    <input type="checkbox" id="subscribe-news" name="subscribeNews" value="yes">
+                    <input id="subscribe-news" name="subscribeNews" type="checkbox" value="yes">
                     <label for="subscribe-news">Subscribe to newsletter updates</label>
                 </div>
                 <div class="form-group">
-                    <button type="submit" id="submit-btn" class="btn-submit">Send Message</button>
+                    <button class="btn-submit" id="submit-btn" type="submit">Send Message</button>
                 </div>
 
             </fieldset>

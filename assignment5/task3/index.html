@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Ticket Builder</title>
+    <style>
+        .error-msg {
+            color: red;
+            font-size: 12px;
+            display: block;
+            min-height: 15px;
+        }
+
+        .invalid {
+            border-color: red;
+        }
+
+        #preview {
+            border: 2px dashed #000;
+            padding: 20px;
+            margin-top: 20px;
+        }
+    </style>
+    <script defer src="script.js"></script>
+</head>
+<body>
+<div id="errors-count" style="color: red; font-weight: bold;"></div>
+
+<form id="ticket-form" novalidate>
+    <div>
+        <label>Event:</label>
+        <select name="event" required>
+            <option value="">Select an event</option>
+            <option value="concert">Rock Concert</option>
+            <option value="theater">Theater Play</option>
+        </select>
+        <span class="error-msg"></span>
+    </div>
+    <div>
+        <label>Date:</label>
+        <input name="date" required type="date">
+        <span class="error-msg"></span>
+    </div>
+    <div>
+        <label>Ticket Type:</label>
+        <select name="type" required>
+            <option value="">Select type</option>
+            <option value="vip">VIP (5 left)</option>
+            <option value="standard">Standard (20 left)</option>
+        </select>
+        <span class="error-msg"></span>
+    </div>
+    <div>
+        <label>Quantity:</label>
+        <input min="1" name="quantity" required type="number">
+        <span class="error-msg"></span>
+    </div>
+    <div>
+        <label>Full Name:</label>
+        <input name="fullName" pattern="^[A-Za-z]+\s[A-Za-z]+$" required type="text">
+        <span class="error-msg"></span>
+    </div>
+    <div>
+        <label>Email:</label>
+        <input name="email" required type="email">
+        <span class="error-msg"></span>
+    </div>
+    <div>
+        <label>Promo Code (PROMO10 for 10% off):</label>
+        <input name="promo" type="text">
+        <span class="error-msg"></span>
+    </div>
+    <button type="submit">Book Ticket</button>
+</form>
+
+<div id="preview">
+    <h3>Ticket Preview</h3>
+    <p id="prev-event">Event: -</p>
+    <p id="prev-date">Date: -</p>
+    <p id="prev-name">Name: -</p>
+    <p id="prev-total">Total: -</p>
+</div>
+
+<div id="final-ticket"></div>
+</body>
+</html>

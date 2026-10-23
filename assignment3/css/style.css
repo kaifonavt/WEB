@@ -1,6 +1,7 @@
 .cards-container {
     padding: 2%;
 }
+
 .cards-grid {
     display: grid;
     grid-template-columns: 1fr;
@@ -22,6 +23,7 @@
     aspect-ratio: 1 / 1;
     margin: 2%;
 }
+
 .card-description {
     margin: 1%;
 }
@@ -30,6 +32,7 @@
     .cards-grid {
         grid-template-columns: repeat(2, 1fr);
     }
+
     .card-image {
         width: 100px;
     }
@@ -39,6 +42,7 @@
     .cards-grid {
         grid-template-columns: repeat(3, 1fr);
     }
+
     .card-image {
         width: 120px;
     }
