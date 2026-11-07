@@ -1,4 +1,3 @@
-/* MEMBER 2 — Marvel data, dynamic characters and the Newbies reading tools. */
 (function (A) {
   'use strict';
   const stories = [

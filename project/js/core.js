@@ -1,4 +1,3 @@
-/* Shared toolkit. Each member's page module owns its content and feature logic. */
 (function (global) {
   'use strict';
   const A = global.Archive = {stories: [], modules: {}, memory: {}, failedStorage: new Set()};
@@ -30,7 +29,6 @@
       [item.title, item.description, item.hero].filter(Boolean).join(' ').toLowerCase().includes(term))
       .sort((a, b) => sort === 'short' ? a.pages - b.pages : a.title.localeCompare(b.title));
   };
-  // Estimate assumes one comic page per minute; the interface explains this.
   A.estimateDays = (pages, minutes) => Number.isFinite(+minutes) && +minutes > 0 ? Math.ceil(pages / minutes) : null;
   A.el = function (tag, attrs = {}, text) {
     const node = document.createElement(tag);
@@ -155,7 +153,6 @@
       }));
     });
   };
-  // Bootstrap fields with custom per-field validation and accessible inline errors.
   A.form = function (root, title, fields, onSuccess) {
     const section = A.el('section', {class: 'interactive-form'});
     section.append(A.el('h2', {}, title), A.el('p', {class: 'muted'}, 'Local demo: nothing is sent by email or to a server. Contact details are not saved.'));

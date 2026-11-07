@@ -1,7 +1,5 @@
-/* MEMBER 1 — Home catalog and the persistent reading list. */
 (function (A) {
   'use strict';
-  // Eight structured pacing options owned by this module, rendered into the DOM.
   A.readingPaces = [
     {id:'tiny',title:'A few panels daily',minutes:5,days:7,description:'A gentle habit for a busy week.'},
     {id:'coffee',title:'Coffee-break reader',minutes:10,days:7,description:'A short chapter alongside your daily break.'},

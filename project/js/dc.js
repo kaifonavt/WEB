@@ -1,4 +1,3 @@
-/* MEMBER 3 — DC archive and the superhero quiz, also embedded in Newbies. */
 (function (A) {
   'use strict';
   const stories = [

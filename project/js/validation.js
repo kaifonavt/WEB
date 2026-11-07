@@ -1,4 +1,3 @@
-/* MEMBER 4 — Existing club registration and illustrative event booking. */
 (function (A) {
   'use strict';
   A.events = [
