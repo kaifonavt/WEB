@@ -1,321 +1,287 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta content="width=device-width, initial-scale=1" name="viewport">
-    <title>MULTIVERSE ARCHIVE - Marvel</title>
-    <link crossorigin="anonymous" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
-          integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" rel="stylesheet">
-    <link href="../css/style.css" rel="stylesheet">
-</head>
-<body>
-<script crossorigin="anonymous"
-        integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
-        src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
-<nav class="navbar navbar-expand-lg navbar-light bg-light shadow sticky-top d-flex">
-    <a class="navbar-brand p-2" href="../index.html">MULTIVERSE<br>ARCHIVE</a>
-    <button class="navbar-toggler" data-bs-target="#mainnavbar" data-bs-toggle="collapse" type="button">
-        <span class="navbar-toggler-icon"></span>
-    </button>
-    <div class="collapse navbar-collapse justify-content-end" id="mainnavbar">
-        <ul class="navbar-nav m-1">
-            <li class="nav-item p-1 m-1"><a class="nav-link" href="">Marvel</a></li>
-            <li class="nav-item p-1 m-1"><a class="nav-link" href="../dc">DC</a></li>
-            <li class="nav-item p-1 m-1"><a class="nav-link" href="../beginers">Newbies</a></li>
-            <li class="nav-item p-1 m-1"><a class="nav-link" href="../club">Club</a></li>
-        </ul>
-    </div>
-</nav>
-<main>
-    <section class="container-fluid">
-        <div class="row g-0 border border-dark border-2">
-            <div class="col-12 col-lg-5 bg-danger text-white p-md-5 d-flex flex-column align-items-start">
-                <span class=" d-inline-block border border-white px-2 py-1 fw-bold">
-                    MARVEL
-                </span>
-                <h1 class="display-4 fw-bold mt-3 mb-0">
-                    Multiverse<br>
-                    OF HEROES
-                </h1>
-            </div>
-            <div class="col-12 col-lg-7 p-3">
-                <p class="mt-3">
-                    Marvel Comics is a famous American comic book publisher known for creating iconic superheroes like
+ <head>
+  <meta charset="utf-8"/>
+  <meta content="width=device-width, initial-scale=1" name="viewport"/>
+  <title>
+   MULTIVERSE ARCHIVE - Marvel
+  </title>
+  <link href="../vendor/bootstrap.min.css" rel="stylesheet"/>
+  <link href="../css/style.css" rel="stylesheet"/>
+  <link href="../css/endterm.css" rel="stylesheet"/>
+  <meta content="Multiverse Archive Marvel: discover superheroes, plan your reading and explore Marvel and DC." name="description"/>
+ </head>
+ <body data-base="../" data-owner="2" data-page="marvel">
+  <a class="skip-link" href="#main">
+   Skip to content
+  </a>
+  <header class="site-header" id="top">
+   <a class="brand" href="../index.html">
+    MULTIVERSE
+    <br/>
+    <span>
+     ARCHIVE
+    </span>
+   </a>
+   <button aria-controls="main-nav" aria-expanded="false" class="btn btn-outline-dark" id="menu-toggle" type="button">
+    Menu
+   </button>
+   <nav aria-label="Main navigation" class="site-nav" id="main-nav">
+    <a href="../index.html">
+     Home
+    </a>
+    <a aria-current="page" href="../marvel/index.html">
+     Marvel
+    </a>
+    <a href="../dc/index.html">
+     DC
+    </a>
+    <a href="../beginers/index.html">
+     Newbies
+    </a>
+    <a href="../club/index.html">
+     Club
+    </a>
+    <a href="../reading-list/index.html">
+     Reading list
+    </a>
+    <a href="../quiz/index.html">
+     Quiz
+    </a>
+    <a href="../events/index.html">
+     Events
+    </a>
+   </nav>
+  </header>
+  <p aria-live="polite" id="site-message" role="status">
+  </p>
+  <main id="main" tabindex="-1">
+   <section class="container-fluid">
+    <div class="row g-0 border border-dark border-2">
+     <div class="col-12 col-lg-5 bg-danger text-white p-md-5 d-flex flex-column align-items-start">
+      <span class="d-inline-block border border-white px-2 py-1 fw-bold">
+       MARVEL
+      </span>
+      <h1 class="display-4 fw-bold mt-3 mb-0">
+       Multiverse
+       <br/>
+       OF HEROES
+      </h1>
+     </div>
+     <div class="col-12 col-lg-7 p-3">
+      <p class="mt-3">
+       Marvel Comics is a famous American comic book publisher known for creating iconic superheroes like
                     Spider-Man, Iron Man, and the Avengers.
-                </p>
-            </div>
-        </div>
-    </section>
-    <section>
-        <div class="container-fluid px-4 my-4">
-            <div class="d-flex justify-content-between align-items-end mb-4 flex-wrap gap-2">
-                <div>
-                    <h2 class="fw-bold m-0">Marvel Heroes.</h2>
-                    <p>Every can be a hero.</p>
-                </div>
-                <a class="text-danger fw-bold text-decoration-none" href="#">Open</a>
-            </div>
-            <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 row-cols-xxl-5 flex-nowrap overflow-x-auto pb-4 g-3">
-                <div class="col">
-                    <div class="card h-100 border-secondary p-3 bg-light">
-                        <img alt="Spider-Man"
-                             class="card-img-top border border-dark mb-3"
-                             src="../media/image/marvel/character/spider_man/spider_man.JPG">
-                        <div class="card-body p-0 d-flex flex-column">
-                            <h3 class="fw-bold m-0 fs-4">SPIDER-MAN</h3>
-                            <p class="text-danger small fw-bold mb-2">PITER PARKER</p>
-                            <p class="card-text mb-3"> An ordinary young man from New York balances his studies
-                                with protecting the city from crime, guided by one rule:
-                                “With great power comes great responsibility.”
-                            </p>
-                            <div class="d-flex flex-wrap gap-1 mb-3 mt-auto">
-                                <span class="badge bg-secondary-subtle text-dark border fw-normal">Teen</span>
-                                <span class="badge bg-secondary-subtle text-dark border fw-normal">Science</span>
-                            </div>
-                            <a class="btn btn-outline-danger w-100 fw-bold" href="#"></a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col">
-                    <div class="card h-100 border-secondary p-3 bg-light">
-                        <img alt="Iron Man"
-                             class="card-img-top border border-dark mb-3"
-                             src="../media/image/marvel/character/iron-man/iron_man_portrait_1.jpg">
-                        <div class="card-body p-0 d-flex flex-column">
-                            <h3 class="fw-bold m-0 fs-4">IRON MAN</h3>
-                            <p class="text-danger small fw-bold mb-2">TONI STARK</p>
-                            <p class="card-text mb-3">Genius inventor and billionaire Tony Stark builds a
-                                high-tech suit of armor to escape captivity. He later
-                                uses his inventions to protect the world.
-                            </p>
-                            <div class="d-flex flex-wrap gap-1 mb-3 mt-auto">
-                                <span class="badge bg-secondary-subtle text-dark border fw-normal">Technologies</span>
-                                <span class="badge bg-secondary-subtle text-dark border fw-normal">Intellect</span>
-                            </div>
-                            <a class="btn btn-outline-danger w-100 fw-bold" href="#"></a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col">
-                    <div class="card h-100 border-secondary p-3 bg-light">
-                        <img alt="Captian America"
-                             class="card-img-top border border-dark mb-3"
-                             src="../media/image/marvel/captain_america.JPG">
-                        <div class="card-body p-0 d-flex flex-column">
-                            <h3 class="fw-bold m-0 fs-4">CAPTAIN AMERICA</h3>
-                            <p class="text-danger small fw-bold mb-2">STEVE ROGERS</p>
-                            <p class="card-text mb-3"> Armed with a vibranium shield, Captain America stands
-                                for justice, honor, and courage. He inspires the Avengers
-                                and brings the team together.
-                            </p>
-                            <div class="d-flex flex-wrap gap-1 mb-3 mt-auto">
-                                <span class="badge bg-secondary-subtle text-dark border fw-normal">Leadership</span>
-                                <span class="badge bg-secondary-subtle text-dark border fw-normal">Courage</span>
-                            </div>
-                            <a class="btn btn-outline-danger w-100 fw-bold" href="#"></a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col">
-                    <div class="card h-100 border-secondary p-3 bg-light">
-                        <img alt="Thor"
-                             class="card-img-top border border-dark mb-3"
-                             src="../media/image/marvel/character/thor/thor.JPG">
-                        <div class="card-body p-0 d-flex flex-column">
-                            <h3 class="fw-bold m-0 fs-4">THOR</h3>
-                            <p class="text-danger small fw-bold mb-2">THOR ODINSON</p>
-                            <p class="card-text mb-3">The mighty god of thunder from Asgard protects both
-                                his homeland and Earth. Thor combines incredible strength
-                                with a sense of duty, fighting alongside the Avengers.
-                            </p>
-                            <div class="d-flex flex-wrap gap-1 mb-3 mt-auto">
-                                <span class="badge bg-secondary-subtle text-dark border fw-normal">Thunder</span>
-                                <span class="badge bg-secondary-subtle text-dark border fw-normal">Asgard</span>
-                            </div>
-                            <a class="btn btn-outline-danger w-100 fw-bold" href="#"></a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col">
-                    <div class="card h-100 border-secondary p-3 bg-light">
-                        <img alt="Black Panther"
-                             class="card-img-top border border-dark mb-3"
-                             src="../media/image/marvel/character/black_panther/black_panther.JPG">
-                        <div class="card-body p-0 d-flex flex-column">
-                            <h3 class="fw-bold m-0 fs-4">BLACK PANTHER</h3>
-                            <p class="text-danger small fw-bold mb-2">T’CHALLA</p>
-                            <p class="card-text mb-3">T’Challa is the king and protector of Wakanda, one of
-                                the most technologically advanced nations on Earth.
-                                He defends his people by combining ancestral traditions
-                                with advanced technology.
-                            </p>
-                            <div class="d-flex flex-wrap gap-1 mb-3 mt-auto">
-                                <span class="badge bg-secondary-subtle text-dark border fw-normal">Wakanda</span>
-                                <span class="badge bg-secondary-subtle text-dark border fw-normal">vibranuim</span>
-                            </div>
-                            <a class="btn btn-outline-danger w-100 fw-bold" href="#"></a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col">
-                    <div class="card h-100 border-secondary p-3 bg-light">
-                        <img alt="Wolverine" class="card-img-top border border-dark mb-3"
-                             src="../media/image/marvel/wolverine.JPG">
-                        <div class="card-body p-0 d-flex flex-column">
-                            <h3 class="fw-bold m-0 fs-4">WOLVERINE</h3>
-                            <p class="text-danger small fw-bold mb-2">JAMES HOWLETT / LOGAN</p>
-                            <p class="card-text mb-3">T’Challa is the king and protector of Wakanda, one of
-                                the most technologically advanced nations on Earth.
-                                He defends his people by combining ancestral traditions
-                                with advanced technology.
-                            </p>
-                            <div class="d-flex flex-wrap gap-1 mb-3 mt-auto">
-                                <span class="badge bg-secondary-subtle text-dark border fw-normal">Regeneration</span>
-                                <span class="badge bg-secondary-subtle text-dark border fw-normal">Adamantium</span>
-                            </div>
-                            <a class="btn btn-outline-danger w-100 fw-bold" href="#"></a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-    <section aria-labelledby="spider-dossier-title" class="marvel-dossier">
-        <h2 id="spider-dossier-title">SPIDER-MAN: BEHIND THE MASK</h2>
-        <p class="marvel-section-intro">
-            Meet the person behind the suit.
-        </p>
-
-        <div class="marvel-dossier-grid">
-            <figure class="marvel-dossier-photo">
-                <img alt="Spider-Man overlooking New York from a rooftop" loading="lazy"
-                     src="../media/image/marvel/new_york.JPG">
-                <figcaption>Your friendly neighborhood Spider-Man.</figcaption>
-            </figure>
-
-            <article class="marvel-dossier-panel">
-                <h3>WHO HE IS</h3>
-                <p>
-                    Peter Parker is a young New Yorker trying to balance
+      </p>
+     </div>
+    </div>
+   </section>
+   <section class="workbench" id="feature" tabindex="-1">
+    <h2>
+     Choose your Marvel story
+    </h2>
+   </section>
+   <section class="workbench" id="characters" tabindex="-1">
+    <h2>
+     Marvel heroes
+    </h2>
+   </section>
+   <section aria-labelledby="spider-dossier-title" class="marvel-dossier">
+    <h2 id="spider-dossier-title">
+     SPIDER-MAN: BEHIND THE MASK
+    </h2>
+    <p class="marvel-section-intro">
+     Meet the person behind the suit.
+    </p>
+    <div class="marvel-dossier-grid">
+     <figure class="marvel-dossier-photo">
+      <img alt="Spider-Man overlooking New York from a rooftop" loading="lazy" src="../media/image/marvel/new_york.JPG"/>
+      <figcaption>
+       Your friendly neighborhood Spider-Man.
+      </figcaption>
+     </figure>
+     <article class="marvel-dossier-panel">
+      <h3>
+       WHO HE IS
+      </h3>
+      <p>
+       Peter Parker is a young New Yorker trying to balance
                     everyday life with the responsibility of being a hero.
                     Behind the mask, he faces familiar struggles with
                     studying, work, and relationships.
-                </p>
-            </article>
-
-            <article class="marvel-dossier-panel">
-                <h3>HIS GREATEST CHOICE</h3>
-                <p>
-                    Peter could use his abilities only for himself.
+      </p>
+     </article>
+     <article class="marvel-dossier-panel">
+      <h3>
+       HIS GREATEST CHOICE
+      </h3>
+      <p>
+       Peter could use his abilities only for himself.
                     Instead, he chooses to help others, even when
                     doing the right thing comes at a personal cost.
-                </p>
-            </article>
-
-            <article class="marvel-dossier-panel">
-                <h3>HIS WORLD</h3>
-                <p>
-                    New York is more than a background to his adventures.
+      </p>
+     </article>
+     <article class="marvel-dossier-panel">
+      <h3>
+       HIS WORLD
+      </h3>
+      <p>
+       New York is more than a background to his adventures.
                     Its streets, rooftops, and people give Peter
                     something worth protecting.
-                </p>
-            </article>
+      </p>
+     </article>
+    </div>
+   </section>
+   <section aria-labelledby="marvel-teams-title" class="container-fluid px-4 py-5">
+    <h2 class="fw-bold mb-2" id="marvel-teams-title">
+     STRONGER TOGETHER
+    </h2>
+    <p class="mb-4">
+     Different heroes. Different abilities. A shared purpose.
+    </p>
+    <div class="row g-4">
+     <div class="col-12 col-lg-6">
+      <article class="marvel-team h-100">
+       <div class="row g-0 h-100">
+        <div class="col-12 col-md-5">
+         <img alt="Iron Man, a member of the Avengers" class="marvel-team-image" loading="lazy" src="../media/image/marvel/avamgers.JPG"/>
         </div>
-    </section>
-    <section aria-labelledby="marvel-teams-title"
-             class="container-fluid px-4 py-5">
-        <h2 class="fw-bold mb-2" id="marvel-teams-title">
-            STRONGER TOGETHER
-        </h2>
-        <p class="mb-4">
-            Different heroes. Different abilities. A shared purpose.
-        </p>
-        <div class="row g-4">
-            <div class="col-12 col-lg-6">
-                <article class="marvel-team h-100">
-                    <div class="row g-0 h-100">
-                        <div class="col-12 col-md-5">
-                            <img alt="Iron Man, a member of the Avengers" class="marvel-team-image"
-                                 loading="lazy" src="../media/image/marvel/avamgers.JPG">
-                        </div>
-                        <div class="col-12 col-md-7">
-                            <div class="p-4 d-flex flex-column h-100">
-                                <h3 class="fw-bold">THE AVENGERS</h3>
-                                <p>
-                                    When a threat is too great for one hero,
+        <div class="col-12 col-md-7">
+         <div class="p-4 d-flex flex-column h-100">
+          <h3 class="fw-bold">
+           THE AVENGERS
+          </h3>
+          <p>
+           When a threat is too great for one hero,
                                     the Avengers come together. Their strength
                                     comes from combining different skills
                                     and learning to work as a team.
-                                </p>
-                                <h4 class="fs-6 fw-bold">FAMILIAR MEMBERS</h4>
-                                <ul class="mb-4">
-                                    <li>Iron Man</li>
-                                    <li>Captain America</li>
-                                    <li>Thor</li>
-                                </ul>
-                                <a class="btn btn-outline-danger mt-auto"
-                                   href="../new/">
-                                    Find your first comic
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                </article>
-            </div>
-            <div class="col-12 col-lg-6">
-                <article class="marvel-team h-100">
-                    <div class="row g-0 h-100">
-                        <div class="col-12 col-md-5">
-                            <img alt="Wolverine, a member of the X-Men" class="marvel-team-image"
-                                 loading="lazy" src="../media/image/marvel/x_men.JPG">
-                        </div>
-
-                        <div class="col-12 col-md-7">
-                            <div class="p-4 d-flex flex-column h-100">
-                                <h3 class="fw-bold">THE X-MEN</h3>
-
-                                <p>
-                                    The X-Men are mutants who protect
+          </p>
+          <h4 class="fs-6 fw-bold">
+           FAMILIAR MEMBERS
+          </h4>
+          <ul class="mb-4">
+           <li>
+            Iron Man
+           </li>
+           <li>
+            Captain America
+           </li>
+           <li>
+            Thor
+           </li>
+          </ul>
+          <a class="btn btn-outline-danger mt-auto" href="../beginers/index.html">
+           Find your first comic
+          </a>
+         </div>
+        </div>
+       </div>
+      </article>
+     </div>
+     <div class="col-12 col-lg-6">
+      <article class="marvel-team h-100">
+       <div class="row g-0 h-100">
+        <div class="col-12 col-md-5">
+         <img alt="Wolverine, a member of the X-Men" class="marvel-team-image" loading="lazy" src="../media/image/marvel/x_men.JPG"/>
+        </div>
+        <div class="col-12 col-md-7">
+         <div class="p-4 d-flex flex-column h-100">
+          <h3 class="fw-bold">
+           THE X-MEN
+          </h3>
+          <p>
+           The X-Men are mutants who protect
                                     a world that often fears them.
                                     Their stories explore identity,
                                     acceptance, and finding a place to belong.
-                                </p>
-
-                                <h4 class="fs-6 fw-bold">FAMILIAR MEMBERS</h4>
-                                <ul class="mb-4">
-                                    <li>Wolverine</li>
-                                    <li>Storm</li>
-                                    <li>Cyclops</li>
-                                </ul>
-
-                                <a class="btn btn-outline-danger mt-auto"
-                                   href="../new/">
-                                    Explore the reading guide
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                </article>
-            </div>
+          </p>
+          <h4 class="fs-6 fw-bold">
+           FAMILIAR MEMBERS
+          </h4>
+          <ul class="mb-4">
+           <li>
+            Wolverine
+           </li>
+           <li>
+            Storm
+           </li>
+           <li>
+            Cyclops
+           </li>
+          </ul>
+          <a class="btn btn-outline-danger mt-auto" href="../beginers/index.html">
+           Explore the reading guide
+          </a>
+         </div>
         </div>
-    </section>
-    <section aria-labelledby="marvel-reading-title" class="marvel-reading">
-        <div>
-            <h2 id="marvel-reading-title">YOUR FIRST STORY STARTS HERE</h2>
-            <p>
-                You do not have to read everything.
-                Start with a character or a theme that interests you.
-            </p>
-        </div>
-        <a class="btn btn-danger" href="../beginers/">
-            Open the beginner’s guide
-        </a>
-    </section>
-</main>
-<footer class="bg-light py-4 border-top mt-auto">
-    <div class="container text-center text-muted">
-        &copy; 2026 Multiverse Archive. All rights reserved.
+       </div>
+      </article>
+     </div>
     </div>
-</footer>
-</body>
+   </section>
+   <section aria-labelledby="marvel-reading-title" class="marvel-reading">
+    <div>
+     <h2 id="marvel-reading-title">
+      YOUR FIRST STORY STARTS HERE
+     </h2>
+     <p>
+      You do not have to read everything.
+                Start with a character or a theme that interests you.
+     </p>
+    </div>
+    <a class="btn btn-danger" href="../beginers/index.html">
+     Open the beginner’s guide
+    </a>
+   </section>
+   <div class="workbench" id="form-area">
+   </div>
+   <section class="workbench" id="help" tabindex="-1">
+    <h2>
+     Good to know
+    </h2>
+   </section>
+   <div class="workbench">
+    <a data-scroll="" href="#main">
+     Back to the top
+    </a>
+   </div>
+  </main>
+  <footer class="site-footer">
+   <nav aria-label="Footer">
+    <a href="../credits.html">
+     Credits &amp; sources
+    </a>
+    <a href="../reading-list/index.html">
+     Your reading list
+    </a>
+   </nav>
+   <p>
+    Multiverse Archive · Student frontend project · 2026
+   </p>
+   <p>
+    Developed with OpenAI ChatGPT/Codex assistance. Marvel and DC characters and inherited artwork belong to their respective rights holders.
+   </p>
+  </footer>
+  <noscript>
+   <p class="workbench">
+    Enable JavaScript to use the catalog, forms, quiz and reading list.
+   </p>
+  </noscript>
+  <script defer="" src="../vendor/jquery.min.js">
+  </script>
+  <script defer="" src="../vendor/bootstrap.bundle.min.js">
+  </script>
+  <script defer="" src="../js/core.js">
+  </script>
+  <script defer="" src="../js/member2.js">
+  </script>
+  <script defer="" src="../js/member3.js">
+  </script>
+  <script defer="" src="../js/member1.js">
+  </script>
+  <script defer="" src="../js/member4.js">
+  </script>
+ </body>
 </html>
