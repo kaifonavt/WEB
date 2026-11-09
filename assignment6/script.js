@@ -38,7 +38,7 @@ let partyData = [
         name: "Living room",
         guests: [
             { name: "Daniel", color: "blue", time: "19:55", aitu: true, things: ["glasses"] },
-            { name: "Zarina", color: "green", time: "22:30", aitu: false, things: [] },
+            { name: "Zarina", color: "green", time: "22:30", aitu: false, things: ["crumbs" , "cup"] },
             { name: "Natasha", color: "purple", time: "20:30", aitu: true, things: ["bag"] },
             { name: "Askar", color: "brown", time: "21:00", aitu: true, things: ["cup"] },
             { name: "Inkar", color: "purple", time: "20:20", aitu: true, things: ["bag"] }
