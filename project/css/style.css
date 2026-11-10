@@ -209,3 +209,25 @@ body {
         margin-bottom: 3rem;
     }
 }
+.btn-casual {
+    background-color: #d1e7dd;
+    color: #0f5132;
+    font-weight: 700;
+    border-radius: 0;
+}
+
+.btn-casual:hover {
+    background-color: #badbcc;
+    color: #051b11;
+}
+
+[data-bs-theme="dark"] .btn-casual {
+    background-color: #0f5132;
+    border: 1px solid #d1e7dd;
+    color: #d1e7dd;
+}
+
+[data-bs-theme="dark"] .btn-casual:hover {
+    background-color: #146c43;
+    color: #ffffff;
+}
