@@ -1,0 +1,80 @@
+[
+  {
+    "name": "SPIDER-MAN",
+    "realName": "PITER PARKER",
+    "image": "../media/image/marvel/character/spider_man/spider_man.JPG",
+    "alt": "Spider-Man",
+    "description": "An ordinary young man from New York balances his studies with protecting the city from crime, guided by one rule: “With great power comes great responsibility.”",
+    "tags": [
+      "Teen",
+      "Science"
+    ],
+    "link": "#",
+    "linkText": "Learn more"
+  },
+  {
+    "name": "IRON MAN",
+    "realName": "TONI STARK",
+    "image": "../media/image/marvel/character/iron-man/iron_man_portrait_1.jpg",
+    "alt": "Iron Man",
+    "description": "Genius inventor and billionaire Tony Stark builds a high-tech suit of armor to escape captivity. He later uses his inventions to protect the world.",
+    "tags": [
+      "Technologies",
+      "Intellect"
+    ],
+    "link": "#",
+    "linkText": "Learn more"
+  },
+  {
+    "name": "CAPTAIN AMERICA",
+    "realName": "STEVE ROGERS",
+    "image": "../media/image/marvel/captain_america.JPG",
+    "alt": "Captian America",
+    "description": "Armed with a vibranium shield, Captain America stands for justice, honor, and courage. He inspires the Avengers and brings the team together.",
+    "tags": [
+      "Leadership",
+      "Courage"
+    ],
+    "link": "#",
+    "linkText": "Learn more"
+  },
+  {
+    "name": "THOR",
+    "realName": "THOR ODINSON",
+    "image": "../media/image/marvel/character/thor/thor.JPG",
+    "alt": "Thor",
+    "description": "The mighty god of thunder from Asgard protects both his homeland and Earth. Thor combines incredible strength with a sense of duty, fighting alongside the Avengers.",
+    "tags": [
+      "Thunder",
+      "Asgard"
+    ],
+    "link": "#",
+    "linkText": "Learn more"
+  },
+  {
+    "name": "BLACK PANTHER",
+    "realName": "T’CHALLA",
+    "image": "../media/image/marvel/character/black_panther/black_panther.JPG",
+    "alt": "Black Panther",
+    "description": "T’Challa is the king and protector of Wakanda, one of the most technologically advanced nations on Earth. He defends his people by combining ancestral traditions with advanced technology.",
+    "tags": [
+      "Wakanda",
+      "vibranuim"
+    ],
+    "link": "#",
+    "linkText": "Learn more"
+  },
+  {
+    "name": "WOLVERINE",
+    "realName": "JAMES HOWLETT / LOGAN",
+    "image": "../media/image/marvel/wolverine.JPG",
+    "alt": "Wolverine",
+    "description": "T’Challa is the king and protector of Wakanda, one of the most technologically advanced nations on Earth. He defends his people by combining ancestral traditions with advanced technology.",
+    "tags": [
+      "Regeneration",
+      "Adamantium"
+    ],
+    "link": "#",
+    "linkText": "Learn more"
+  }
+]
