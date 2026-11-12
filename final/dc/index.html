@@ -49,98 +49,42 @@
             </div>
         </div>
     </section>
-    <section class="container-fluid">
-        <!-- TODO: city-card (Artur) -->
-    </section>
+    <section>
+            <div class="container-fluid px-4 my-4">
+                <div class="d-flex justify-content-between align-items-end mb-4 flex-wrap gap-2">
+                    <div>
+                        <h2 class="fw-bold m-0">DC Heroes.</h2>
+                        <p>Every can be a hero.</p>
+                    </div>
+                    <a href="#" class="text-danger fw-bold text-decoration-none">Open</a>
+                </div>
+                <p id="heroes-status" role="status">loading…</p>
+                <div id="heroes-list" class="row row-cols-1 row-cols-md-2 row-cols-lg-3 row-cols-xxl-5 flex-nowrap overflow-x-auto pb-4 g-3"></div>
+            </div>
+        </section>
+    <template id="hero-template">
+        <div class="col">
+            <div class="card h-100 border-secondary p-3">
+                <div class="ratio ratio-1x1 mb-3 border rounded overflow-hidden">
+                    <img class="w-100 h-100 object-fit-cover" loading="lazy" alt="">
+                </div>
+                <div class="card-body p-0 d-flex flex-column">
+                    <h3 class="fw-bold m-0 fs-4" data-field="name"></h3>
+                    <p class="text-primary-emphasis small fw-bold mb-2" data-field="realName"></p>
+                    <p class="card-text mb-3" data-field="description"></p>
+                    <div class="d-flex flex-wrap gap-1 mb-3 mt-auto" data-field="tags"></div>
+                    <a class="btn btn-outline-primary w-100 fw-bold" data-field="link"></a>
+                </div>
+            </div>
+        </div>
+    </template>
+    <section class="container-fluid px-4 py-4">
 
     <section class="container-fluid px-4 py-4">
         <!-- TODO: Add Hero card generation through hero-card.js style though bootstrap even if looks bad, use marvel page as refernece (Zhalgas)  -->
     </section>
     <section class="container-fluid px-4 py-4">
         <!-- TODO: comics-card (Artur) -->
-    </section>
-    <section class="container-fluid px-4 py-4 mb-4"
-             aria-labelledby="dc-reading-title">
-        <h2 id="dc-reading-title" class="fw-bold mb-4">
-            WHAT KIND OF STORY DO YOU WANT?
-        </h2>
-        <div class="accordion" id="dc-reading">
-            <div class="accordion-item">
-                <h3 class="accordion-header">
-                    <button class="accordion-button" type="button"
-                            data-bs-toggle="collapse"
-                            data-bs-target="#dc-detective"
-                            aria-expanded="true"
-                            aria-controls="dc-detective">
-                        I want a detective story
-                    </button>
-                </h3>
-                <div id="dc-detective"
-                     class="accordion-collapse collapse show"
-                     data-bs-parent="#dc-reading">
-                    <div class="accordion-body">
-                        <p>
-                            Start with Batman if you enjoy mysteries,
-                            investigations, and difficult choices
-                            in the streets of Gotham.
-                        </p>
-                        <a href="../new/" class="text-primary">
-                            Open the beginner’s guide
-                        </a>
-                    </div>
-                </div>
-            </div>
-            <div class="accordion-item">
-                <h3 class="accordion-header">
-                    <button class="accordion-button collapsed" type="button"
-                            data-bs-toggle="collapse"
-                            data-bs-target="#dc-scifi"
-                            aria-expanded="false"
-                            aria-controls="dc-scifi">
-                        I want science fiction
-                    </button>
-                </h3>
-
-                <div id="dc-scifi" class="accordion-collapse collapse"
-                     data-bs-parent="#dc-reading">
-                    <div class="accordion-body">
-                        <p>
-                            Explore Superman or Green Lantern
-                            for alien worlds, extraordinary powers,
-                            and adventures beyond Earth.
-                        </p>
-                        <a href="../newbies" class="text-primary">
-                            Open the beginner’s guide
-                        </a>
-                    </div>
-                </div>
-            </div>
-            <div class="accordion-item">
-                <h3 class="accordion-header">
-                    <button class="accordion-button collapsed" type="button"
-                            data-bs-toggle="collapse"
-                            data-bs-target="#dc-mythology"
-                            aria-expanded="false"
-                            aria-controls="dc-mythology">
-                        I want mythology
-                    </button>
-                </h3>
-
-                <div id="dc-mythology" class="accordion-collapse collapse"
-                     data-bs-parent="#dc-reading">
-                    <div class="accordion-body">
-                        <p>
-                            Discover Wonder Woman for stories
-                            about Amazons, ancient myths,
-                            courage, and compassion.
-                        </p>
-                        <a href="../newbies" class="text-primary">
-                            Open the beginner’s guide
-                        </a>
-                    </div>
-                </div>
-            </div>
-        </div>
     </section>
 </main>
 <script src="../script/hero-card.js" defer></script>

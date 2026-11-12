@@ -28,7 +28,7 @@
   {
     "name": "CAPTAIN AMERICA",
     "realName": "STEVE ROGERS",
-    "image": "../media/image/marvel/captain_america.JPG",
+    "image": "../media/image/marvel/character/captain_america/captain_america.JPG",
     "alt": "Captian America",
     "description": "Armed with a vibranium shield, Captain America stands for justice, honor, and courage. He inspires the Avengers and brings the team together.",
     "tags": [
@@ -67,7 +67,7 @@
   {
     "name": "WOLVERINE",
     "realName": "JAMES HOWLETT / LOGAN",
-    "image": "../media/image/marvel/wolverine.JPG",
+    "image": "../media/image/marvel/character/wolverine/wolverine.JPG",
     "alt": "Wolverine",
     "description": "T’Challa is the king and protector of Wakanda, one of the most technologically advanced nations on Earth. He defends his people by combining ancestral traditions with advanced technology.",
     "tags": [

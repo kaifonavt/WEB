@@ -1,0 +1,80 @@
+[
+  {
+    "name": "BATMAN",
+    "realName": "BRUCE WAYNE",
+    "image": "../media/image/dc/character/batman/batman.jpg",
+    "alt": "Batman",
+    "description": "After witnessing the murder of his parents, billionaire Bruce Wayne dedicates his life to protecting Gotham City from crime. Relying on peak human conditioning, detective skills, and advanced technology, he strikes fear into the city's underworld.",
+    "tags": [
+      "Detective",
+      "Technologies"
+    ],
+    "link": "#",
+    "linkText": "Learn more"
+  },
+  {
+    "name": "SUPERMAN",
+    "realName": "CLARK KENT / KAL-EL",
+    "image": "../media/image/dc/character/superman/superman.jpg",
+    "alt": "Superman",
+    "description": "Born on the doomed planet Krypton and raised in Smallville, Clark Kent uses his extraordinary powers under Earth's yellow sun to defend humanity. As a symbol of hope and justice, he leads the Justice League in protecting the world.",
+    "tags": [
+      "Krypton",
+      "Hope"
+    ],
+    "link": "#",
+    "linkText": "Learn more"
+  },
+  {
+    "name": "WONDER WOMAN",
+    "realName": "DIANA PRINCE",
+    "image": "../media/image/dc/character/wonder_woman/wonder_woman.jpg",
+    "alt": "Wonder Woman",
+    "description": "Warrior princess of the Amazons from the hidden island of Themyscira, Diana brings strength, wisdom, and compassion to the world of mortals. Armed with her Lasso of Truth and indestructible bracelets, she fights alongside the Justice League for peace and equality.",
+    "tags": [
+      "Themyscira",
+      "Courage"
+    ],
+    "link": "#",
+    "linkText": "Learn more"
+  },
+  {
+    "name": "THE FLASH",
+    "realName": "BARRY ALLEN",
+    "image": "../media/image/dc/character/the_flash/the_flash.jpg",
+    "alt": "The Flash",
+    "description": "Struck by lightning and doused in chemicals during a lab accident, forensic scientist Barry Allen gains a connection to the Speed Force. As the fastest man alive, he protects Central City and races across time and space to save innocent lives.",
+    "tags": [
+      "Speed",
+      "Science"
+    ],
+    "link": "#",
+    "linkText": "Learn more"
+  },
+  {
+    "name": "AQUAMAN",
+    "realName": "ARTHUR CURRY",
+    "image": "../media/image/dc/character/aquaman/aquaman.JPG",
+    "alt": "Aquaman",
+    "description": "Arthur Curry is the half-human, half-Atlantean king and protector of the underwater realm of Atlantis. Wielding the Trident of Poseidon and command over marine life, he bridges the surface world and the seven seas.",
+    "tags": [
+      "Atlantis",
+      "Ocean"
+    ],
+    "link": "#",
+    "linkText": "Learn more"
+  },
+  {
+    "name": "GREEN LANTERN",
+    "realName": "HAL JORDAN",
+    "image": "../media/image/dc/character/green_lantern/green_lantern.JPG",
+    "alt": "Green Lantern",
+    "description": "Chosen for his ability to overcome great fear, test pilot Hal Jordan wields a power ring fueled by pure willpower as a member of the intergalactic Green Lantern Corps. He patrols Space Sector 2814 and defends Earth alongside the Justice League.",
+    "tags": [
+      "Willpower",
+      "Cosmos"
+    ],
+    "link": "#",
+    "linkText": "Learn more"
+  }
+]

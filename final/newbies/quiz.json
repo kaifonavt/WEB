@@ -1,0 +1,156 @@
+[
+  {
+    "universe": "Marvel",
+    "question": "What is Spider-Man's real name?",
+    "options": [
+      "Peter Parker",
+      "Bruce Wayne",
+      "Tony Stark",
+      "Clark Kent"
+    ],
+    "answer": 0
+  },
+  {
+    "universe": "DC",
+    "question": "Which city does Batman protect?",
+    "options": [
+      "Metropolis",
+      "Central City",
+      "Gotham City",
+      "Star City"
+    ],
+    "answer": 2
+  },
+  {
+    "universe": "Marvel",
+    "question": "What metal is Captain America's shield made of?",
+    "options": [
+      "Adamantium",
+      "Vibranium",
+      "Uru",
+      "Titanium"
+    ],
+    "answer": 1
+  },
+  {
+    "universe": "DC",
+    "question": "What is Superman's home planet?",
+    "options": [
+      "Mars",
+      "Oa",
+      "Asgard",
+      "Krypton"
+    ],
+    "answer": 3
+  },
+  {
+    "universe": "Marvel",
+    "question": "Who is the king and protector of Wakanda?",
+    "options": [
+      "T'Challa",
+      "Thor Odinson",
+      "Steve Rogers",
+      "Logan"
+    ],
+    "answer": 0
+  },
+  {
+    "universe": "DC",
+    "question": "What is Wonder Woman's homeland called?",
+    "options": [
+      "Atlantis",
+      "Themyscira",
+      "Smallville",
+      "Krypton"
+    ],
+    "answer": 1
+  },
+  {
+    "universe": "Marvel",
+    "question": "What is the name of Thor's enchanted hammer?",
+    "options": [
+      "Stormbreaker",
+      "Gungnir",
+      "Mjolnir",
+      "Excalibur"
+    ],
+    "answer": 2
+  },
+  {
+    "universe": "DC",
+    "question": "What powers Green Lantern's ring?",
+    "options": [
+      "Solar energy",
+      "The Speed Force",
+      "Magic",
+      "Willpower"
+    ],
+    "answer": 3
+  },
+  {
+    "universe": "Marvel",
+    "question": "Which indestructible metal is bonded to Wolverine's skeleton?",
+    "options": [
+      "Adamantium",
+      "Vibranium",
+      "Promethium",
+      "Carbonadium"
+    ],
+    "answer": 0
+  },
+  {
+    "universe": "DC",
+    "question": "What is The Flash's real name?",
+    "options": [
+      "Hal Jordan",
+      "Arthur Curry",
+      "Barry Allen",
+      "Dick Grayson"
+    ],
+    "answer": 2
+  },
+  {
+    "universe": "Marvel",
+    "question": "Who built the first Iron Man suit in captivity?",
+    "options": [
+      "Bruce Banner",
+      "Tony Stark",
+      "Reed Richards",
+      "Hank Pym"
+    ],
+    "answer": 1
+  },
+  {
+    "universe": "DC",
+    "question": "Which underwater kingdom does Aquaman rule?",
+    "options": [
+      "Lemuria",
+      "New Genesis",
+      "Atlantis",
+      "Thanagar"
+    ],
+    "answer": 2
+  },
+  {
+    "universe": "DC",
+    "question": "Who is Batman's loyal butler and confidant?",
+    "options": [
+      "James Gordon",
+      "Lucius Fox",
+      "Harvey Dent",
+      "Alfred Pennyworth"
+    ],
+    "answer": 3
+  },
+  {
+    "universe": "Marvel & DC",
+    "question": "Which newspaper does Clark Kent work for as a reporter?",
+    "options": [
+      "The Daily Bugle",
+      "The Daily Planet",
+      "Gotham Gazette",
+      "Central City Citizen"
+    ],
+    "answer": 1
+  }
+]

@@ -65,7 +65,9 @@
     <template id="hero-template">
         <div class="col">
             <div class="card h-100 border-secondary p-3">
-                <img class="card-img-top border border mb-3" loading="lazy" alt="">
+                <div class="ratio ratio-1x1 mb-3 border rounded overflow-hidden">
+                    <img class="w-100 h-100 object-fit-cover" loading="lazy" alt="">
+                </div>
                 <div class="card-body p-0 d-flex flex-column">
                     <h3 class="fw-bold m-0 fs-4" data-field="name"></h3>
                     <p class="text-danger-emphasis small fw-bold mb-2" data-field="realName"></p>
