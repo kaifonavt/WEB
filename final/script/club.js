@@ -1,11 +1,25 @@
 const meetings = [
-    { id: "2026-11-15", date: "Nov 15, 2026", title: "The Evolution of Gotham Villains" },
-    { id: "2026-11-28", date: "Nov 28, 2026", title: "Exploring Alternate Marvel Timelines" }
+    {
+        id: "2026-11-15",
+        date: "Nov 15, 2026",
+        title: "The Evolution of Gotham Villains",
+        universe: "dc",
+        reading: { id: "dc-1", title: "Batman: The Dark Knight Returns" }
+    },
+    {
+        id: "2026-11-28",
+        date: "Nov 28, 2026",
+        title: "Exploring Alternate Marvel Timelines",
+        universe: "marvel",
+        reading: { id: "marvel-4", title: "House of X / Powers of X" }
+    }
 ];
 
 const rsvpStorageKey = "multiverse_club_rsvps";
 const form = document.getElementById("club-form");
 const meetingField = form.elements.meeting;
+const meetingFilter = document.getElementById("meeting-filter");
+const schedule = document.getElementById("club-schedule");
 const savedList = document.getElementById("rsvp-list");
 const successMessage = document.getElementById("rsvp-success");
 const errorMessage = document.getElementById("rsvp-error");
@@ -36,10 +50,22 @@ function saveRsvps(nextRsvps) {
 }
 
 function renderMeetings() {
-    const schedule = document.getElementById("club-schedule");
+    const universe = meetingFilter.value;
+    const visibleMeetings = meetings.filter(meeting => universe === "all" || meeting.universe === universe);
+    schedule.replaceChildren();
 
-    for (const meeting of meetings) {
+    const count = visibleMeetings.length;
+    document.getElementById("meeting-count").textContent = count + (count === 1 ? " meeting" : " meetings");
+    if (!count) {
+        const message = schedule.insertRow().insertCell();
+        message.colSpan = 2;
+        message.textContent = "No meetings found.";
+        return;
+    }
+
+    for (const meeting of visibleMeetings) {
         const row = document.createElement("tr");
+        row.className = "club-meeting";
         const date = document.createElement("th");
         date.scope = "row";
 
@@ -62,7 +88,6 @@ function renderMeetings() {
         discussion.append(choose);
         row.append(date, discussion);
         schedule.append(row);
-        meetingField.add(new Option(meeting.date + " — " + meeting.title, meeting.id));
     }
 }
 
@@ -74,7 +99,7 @@ function updateRsvpCount() {
 function appendRsvp(rsvp, animate = false) {
     const meeting = meetings.find(item => item.id === rsvp.meeting);
     const entry = document.createElement("li");
-    entry.className = "club-rsvp border-top py-2";
+    entry.className = "club-rsvp border rounded p-2 mt-2";
 
     const label = document.createElement("p");
     label.className = "mb-1";
@@ -103,7 +128,20 @@ function appendRsvp(rsvp, animate = false) {
         }
     });
 
-    entry.append(label, remove);
+    entry.append(label);
+    if (meeting) {
+        const date = document.createElement("time");
+        date.className = "d-block small text-body-secondary mb-1";
+        date.dateTime = meeting.id;
+        date.textContent = meeting.date;
+
+        const reading = document.createElement("a");
+        reading.className = "d-block small mb-2";
+        reading.href = "../" + meeting.universe + "/#" + meeting.reading.id;
+        reading.textContent = "Reading: " + meeting.reading.title;
+        entry.append(date, reading);
+    }
+    entry.append(remove);
     savedList.append(entry);
     if (animate && window.jQuery && !reducedMotion.matches) {
         window.jQuery(entry).hide().slideDown(180);
@@ -180,6 +218,10 @@ form.addEventListener("submit", event => {
     }
 });
 
+for (const meeting of meetings) {
+    meetingField.add(new Option(meeting.date + " — " + meeting.title, meeting.id));
+}
+meetingFilter.addEventListener("change", renderMeetings);
 renderMeetings();
 rsvps.forEach(rsvp => appendRsvp(rsvp));
 updateRsvpCount();

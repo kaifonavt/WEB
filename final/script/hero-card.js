@@ -2,6 +2,7 @@ async function loadHeroes() {
     const container = document.getElementById('heroes-list');
     const template = document.getElementById('hero-template');
     const status = document.getElementById('heroes-status');
+    if (!container || !template || !status) return;
 
     try {
         const response = await fetch('./hero-card.json');
@@ -33,9 +34,7 @@ async function loadHeroes() {
                 badge.textContent = tag;
                 tags.append(badge);
             }
-            const link = card.querySelector('[data-field="link"]');
-            link.href = hero.link || '#';
-            link.textContent = hero.linkText || 'Learn more';
+            card.querySelector('[data-field="details"]').textContent = hero.details;
             cards.append(card);
         }
 

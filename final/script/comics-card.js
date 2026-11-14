@@ -24,6 +24,7 @@ async function loadComics() {
         const cards = document.createDocumentFragment();
         for (const comic of comics) {
             const card = template.content.cloneNode(true);
+            card.firstElementChild.id = comic.id;
             const image = card.querySelector('img');
             image.src = comic.image;
             image.alt = comic.alt || comic.title;
@@ -52,6 +53,10 @@ async function loadComics() {
         }
 
         container.replaceChildren(cards);
+        const linkedComic = document.getElementById(location.hash.slice(1));
+        if (linkedComic && container.contains(linkedComic)) {
+            linkedComic.scrollIntoView({ block: 'start', inline: 'nearest' });
+        }
         if (status) {
             status.textContent = comics.length ? '' : 'No comics added.';
             status.classList.toggle('d-none', comics.length > 0);

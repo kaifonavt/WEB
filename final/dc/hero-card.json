@@ -9,8 +9,7 @@
       "Detective",
       "Technologies"
     ],
-    "link": "#",
-    "linkText": "Learn more"
+    "details": "Based in Gotham City, Batman often works with Robin and draws on the resources of the Batcave."
   },
   {
     "name": "SUPERMAN",
@@ -22,8 +21,7 @@
       "Krypton",
       "Hope"
     ],
-    "link": "#",
-    "linkText": "Learn more"
+    "details": "Raised by Jonathan and Martha Kent, Clark works as a reporter at the Daily Planet in Metropolis."
   },
   {
     "name": "WONDER WOMAN",
@@ -35,8 +33,7 @@
       "Themyscira",
       "Courage"
     ],
-    "link": "#",
-    "linkText": "Learn more"
+    "details": "Diana can use her Lasso of Truth to compel those it binds to speak honestly."
   },
   {
     "name": "THE FLASH",
@@ -48,8 +45,7 @@
       "Speed",
       "Science"
     ],
-    "link": "#",
-    "linkText": "Learn more"
+    "details": "Barry Allen is one of several heroes to use the Flash name, alongside Jay Garrick and Wally West."
   },
   {
     "name": "AQUAMAN",
@@ -61,8 +57,7 @@
       "Atlantis",
       "Ocean"
     ],
-    "link": "#",
-    "linkText": "Learn more"
+    "details": "Arthur Curry is a founding member of the Justice League. His telepathy lets him communicate with sea life."
   },
   {
     "name": "GREEN LANTERN",
@@ -74,7 +69,6 @@
       "Willpower",
       "Cosmos"
     ],
-    "link": "#",
-    "linkText": "Learn more"
+    "details": "Abin Sur entrusted Hal with his ring and responsibility for guarding Earth’s sector of space."
   }
 ]

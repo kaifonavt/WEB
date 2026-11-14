@@ -78,9 +78,13 @@ $(document).ready(function () {
 
             const $thumbWrap = $("<div>").addClass("col-3 col-sm-2 col-md-1 flex-shrink-0");
             const $thumbRatio = $("<div>").addClass("ratio ratio-1x1 border");
+            const image = comic.image?.replace(
+                /^\.\.\/images\/comics\//,
+                "../media/image/" + comic.universe.toLowerCase() + "/comics/"
+            );
             const $thumb = $("<img>")
                 .addClass("object-fit-cover w-100 h-100")
-                .attr("src", comic.image)
+                .attr("src", image)
                 .attr("alt", comic.title);
             $thumbRatio.append($thumb);
             $thumbWrap.append($thumbRatio);

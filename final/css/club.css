@@ -1,5 +1,6 @@
 .club-page {
     --club-accent: var(--bs-danger-text-emphasis);
+    --club-highlight: var(--bs-tertiary-bg);
     --club-banner: #20243c;
     font-weight: 400;
     line-height: 1.5;
@@ -41,13 +42,28 @@
     color: var(--club-accent);
 }
 
-.club-page :is(button, input, select, textarea):focus-visible {
+.club-page :is(a, button, input, select, textarea):focus-visible {
     outline: 2px solid var(--bs-emphasis-color);
     outline-offset: 2px;
 }
 
 .club-rsvp {
     overflow-wrap: anywhere;
+}
+
+.club-meeting > *, .club-rsvp {
+    transition: background-color .2s ease;
+}
+
+.club-meeting:is(:hover, :focus-within) > *,
+.club-rsvp:is(:hover, :focus-within) {
+    background-color: var(--club-highlight);
+}
+
+@media (prefers-reduced-motion: reduce) {
+    .club-meeting > *, .club-rsvp {
+        transition: none;
+    }
 }
 
 @media (min-width: 992px) {

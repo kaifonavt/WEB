@@ -1,7 +1,7 @@
 [
   {
     "name": "SPIDER-MAN",
-    "realName": "PITER PARKER",
+    "realName": "PETER PARKER",
     "image": "../media/image/marvel/character/spider_man/spider_man.JPG",
     "alt": "Spider-Man",
     "description": "An ordinary young man from New York balances his studies with protecting the city from crime, guided by one rule: “With great power comes great responsibility.”",
@@ -9,12 +9,11 @@
       "Teen",
       "Science"
     ],
-    "link": "#",
-    "linkText": "Learn more"
+    "details": "Peter often relies on his spider-sense to detect danger and uses web-shooters that he built himself."
   },
   {
     "name": "IRON MAN",
-    "realName": "TONI STARK",
+    "realName": "TONY STARK",
     "image": "../media/image/marvel/character/iron-man/iron_man_portrait_1.jpg",
     "alt": "Iron Man",
     "description": "Genius inventor and billionaire Tony Stark builds a high-tech suit of armor to escape captivity. He later uses his inventions to protect the world.",
@@ -22,21 +21,19 @@
       "Technologies",
       "Intellect"
     ],
-    "link": "#",
-    "linkText": "Learn more"
+    "details": "Tony uses the identity of Iron Man. His armor has changed over the years to meet different challenges."
   },
   {
     "name": "CAPTAIN AMERICA",
     "realName": "STEVE ROGERS",
     "image": "../media/image/marvel/character/captain_america/captain_america.JPG",
-    "alt": "Captian America",
+    "alt": "Captain America",
     "description": "Armed with a vibranium shield, Captain America stands for justice, honor, and courage. He inspires the Avengers and brings the team together.",
     "tags": [
       "Leadership",
       "Courage"
     ],
-    "link": "#",
-    "linkText": "Learn more"
+    "details": "Steve Rogers received the Super-Soldier Serum during World War II and later joined the Avengers."
   },
   {
     "name": "THOR",
@@ -48,8 +45,7 @@
       "Thunder",
       "Asgard"
     ],
-    "link": "#",
-    "linkText": "Learn more"
+    "details": "Thor wields Mjolnir, a hammer enchanted so that only those worthy of its power can lift it."
   },
   {
     "name": "BLACK PANTHER",
@@ -59,22 +55,20 @@
     "description": "T’Challa is the king and protector of Wakanda, one of the most technologically advanced nations on Earth. He defends his people by combining ancestral traditions with advanced technology.",
     "tags": [
       "Wakanda",
-      "vibranuim"
+      "Vibranium"
     ],
-    "link": "#",
-    "linkText": "Learn more"
+    "details": "T’Challa’s home, Wakanda, is closely associated with vibranium, the metal used in much of its technology."
   },
   {
     "name": "WOLVERINE",
     "realName": "JAMES HOWLETT / LOGAN",
     "image": "../media/image/marvel/character/wolverine/wolverine.JPG",
     "alt": "Wolverine",
-    "description": "T’Challa is the king and protector of Wakanda, one of the most technologically advanced nations on Earth. He defends his people by combining ancestral traditions with advanced technology.",
+    "description": "Logan is a mutant with a powerful healing factor and adamantium claws. After escaping the Weapon X program, he joined the X-Men.",
     "tags": [
       "Regeneration",
       "Adamantium"
     ],
-    "link": "#",
-    "linkText": "Learn more"
+    "details": "Logan’s healing factor helped him survive the Weapon X procedure that bonded adamantium to his skeleton."
   }
 ]

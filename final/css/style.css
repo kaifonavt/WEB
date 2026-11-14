@@ -5,3 +5,12 @@ body {
     line-height: 1.1;
 }
 
+#comics-heading,
+#comics-list > .col {
+    scroll-margin-top: 6rem;
+}
+
+#comics-list > .col:target .card {
+    outline: 2px solid var(--bs-primary);
+    outline-offset: -2px;
+}

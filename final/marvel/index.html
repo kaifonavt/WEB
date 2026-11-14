@@ -57,9 +57,9 @@
             <div class="d-flex justify-content-between align-items-end mb-4 flex-wrap gap-2">
                 <div>
                     <h2 class="fw-bold m-0">Marvel Heroes.</h2>
-                    <p>Every can be a hero.</p>
+                    <p>Anyone can be a hero.</p>
                 </div>
-                <a href="#" class="text-danger fw-bold text-decoration-none">Open</a>
+                <a href="#comics-heading" class="text-danger fw-bold text-decoration-none">Browse comics</a>
             </div>
             <p id="heroes-status" role="status">loading…</p>
             <div id="heroes-list" class="row row-cols-1 row-cols-md-2 row-cols-lg-3 row-cols-xxl-5 flex-nowrap overflow-x-auto pb-4 g-3"></div>
@@ -76,7 +76,10 @@
                     <p class="text-danger-emphasis small fw-bold mb-2" data-field="realName"></p>
                     <p class="card-text mb-3" data-field="description"></p>
                     <div class="d-flex flex-wrap gap-1 mb-3 mt-auto" data-field="tags"></div>
-                    <a class="btn btn-outline-danger w-100 fw-bold" data-field="link"></a>
+                    <details class="border-top pt-2">
+                        <summary class="fw-bold">Learn more</summary>
+                        <p class="mt-2 mb-0" data-field="details"></p>
+                    </details>
                 </div>
             </div>
         </div>
@@ -87,7 +90,7 @@
         <div class="container-fluid px-4 my-4">
             <div class="d-flex justify-content-between align-items-end mb-4 flex-wrap gap-2">
                 <div>
-                    <h2 class="fw-bold m-0">Marvel Comics.</h2>
+                    <h2 class="fw-bold m-0" id="comics-heading">Marvel Comics.</h2>
                     <p class="mb-0">Iconic issues and essential story arcs.</p>
                 </div>
                 <a href="../reading-list" class="text-danger fw-bold text-decoration-none">Reading List</a>
@@ -96,12 +99,12 @@
             <div id="comics-list" class="row row-cols-1 row-cols-md-2 row-cols-lg-3 row-cols-xxl-5 flex-nowrap overflow-x-auto pb-4 g-3"></div>
         </div>
     </section>
-    <!-- TODO: Batyr add pictures (look in Json files) -->
+
     <template id="comics-template">
         <div class="col">
             <div class="card h-100 border-secondary p-3">
                 <div class="ratio ratio-1x1 mb-3 border rounded overflow-hidden">
-                    <img class="w-100 h-100 object-fit-cover" loading="lazy" alt="">
+                    <img class="w-100 h-100 object-fit-contain bg-body-tertiary" loading="lazy" alt="">
                 </div>
                 <div class="card-body p-0 d-flex flex-column">
                     <span class="badge align-self-start mb-2" data-field="universe"></span>
@@ -117,8 +120,9 @@
 </main>
 <footer class="py-4 border-top mt-auto">
     <div class="container text-center text-muted">
-        &copy; 2026 Multiverse Archive. No rights reserved.</br>
-        Pictures are associated with Warner Bros. And Disney
+        &copy; 2026 Multiverse Archive. No rights reserved.<br>
+        Character artwork from Marvel.<br>
+        Comic covers from <a href="https://prhcomics.com/">Penguin Random House Comics Retail</a>.
     </div>
 </footer>
 <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>

@@ -44,6 +44,18 @@
     <div class="club-layout" id="club-content" hidden>
         <section class="club-panel border p-3 p-md-4" aria-labelledby="meetings-title">
             <h2 class="h4 mb-3" id="meetings-title">Upcoming Meetings</h2>
+            <div class="d-flex flex-wrap align-items-end justify-content-between gap-2 mb-3">
+                <div>
+                    <label for="meeting-filter" class="form-label mb-1">Filter by universe</label>
+                    <select id="meeting-filter" class="form-select form-select-sm">
+                        <option value="all">All</option>
+                        <option value="dc">DC</option>
+                        <option value="marvel">Marvel</option>
+                        <option value="indie">Independent Comics</option>
+                    </select>
+                </div>
+                <p id="meeting-count" class="small text-body-secondary mb-0" role="status"></p>
+            </div>
             <div class="table-responsive">
                 <table class="table align-middle club-schedule mb-0" aria-labelledby="meetings-title">
                     <thead><tr><th scope="col">Date</th><th scope="col">Discussion</th></tr></thead>
