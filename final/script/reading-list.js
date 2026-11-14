@@ -1,7 +1,5 @@
 $(document).ready(function () {
     const STORAGE_KEY = "multiverse_reading_list";
-
-    // --- LocalStorage Helpers ---
     function getReadingList() {
         try {
             const raw = localStorage.getItem(STORAGE_KEY);
@@ -78,7 +76,7 @@ $(document).ready(function () {
 
             const $left = $("<div>").addClass("d-flex align-items-center gap-3");
 
-            const $thumbWrap = $("<div>").addClass("col-3 col-sm-2 col-md-1");
+            const $thumbWrap = $("<div>").addClass("col-3 col-sm-2 col-md-1 flex-shrink-0");
             const $thumbRatio = $("<div>").addClass("ratio ratio-1x1 border");
             const $thumb = $("<img>")
                 .addClass("object-fit-cover w-100 h-100")
@@ -98,7 +96,9 @@ $(document).ready(function () {
 
             $headerRow.append($badge, $title);
 
-            const $info = $("<p>").addClass("small text-secondary mb-0").text(comic.info);
+            const $info = $("<p>")
+                .addClass("small text-secondary mb-0 d-none d-md-block")
+                .text(comic.info);
 
             $textWrap.append($headerRow, $info);
             $left.append($thumbWrap, $textWrap);
@@ -191,7 +191,6 @@ $(document).ready(function () {
         }
     });
 
-    // Initial page load setup
     updateNavBadge(getReadingList().length);
     syncCatalogButtons();
     renderReadingList();
