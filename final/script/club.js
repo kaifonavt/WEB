@@ -65,9 +65,9 @@ function renderMeetings() {
 
     for (const meeting of visibleMeetings) {
         const row = document.createElement("tr");
-        row.className = "club-meeting";
         const date = document.createElement("th");
         date.scope = "row";
+        date.className = "text-nowrap";
 
         const time = document.createElement("time");
         time.dateTime = meeting.id;
@@ -77,7 +77,7 @@ function renderMeetings() {
         const discussion = document.createElement("td");
         const choose = document.createElement("button");
         choose.type = "button";
-        choose.className = "btn btn-sm club-meeting-button";
+        choose.className = "btn btn-sm btn-outline-secondary text-start";
         choose.textContent = meeting.title;
         choose.setAttribute("aria-label", "Select meeting: " + meeting.title);
         choose.addEventListener("click", () => {
@@ -99,7 +99,7 @@ function updateRsvpCount() {
 function appendRsvp(rsvp, animate = false) {
     const meeting = meetings.find(item => item.id === rsvp.meeting);
     const entry = document.createElement("li");
-    entry.className = "club-rsvp border rounded p-2 mt-2";
+    entry.className = "border rounded p-2 mt-2 text-break";
 
     const label = document.createElement("p");
     label.className = "mb-1";
