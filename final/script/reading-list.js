@@ -21,7 +21,6 @@ $(document).ready(function () {
         $("#nav-reading-count").text(count);
     }
 
-    // --- Sync Button States on Main Page Cards ---
     function syncCatalogButtons() {
         const savedIds = new Set(getReadingList().map((item) => String(item.id)));
 
@@ -36,12 +35,12 @@ $(document).ready(function () {
         if (!$btn.length) return;
 
         if (isAdded) {
-            $btn.removeClass("btn-outline-dark")
+            $btn.removeClass("btn-outline-secondary")
                 .addClass("btn-danger")
                 .html('<i class="bi bi-trash me-1"></i>Remove');
         } else {
             $btn.removeClass("btn-danger")
-                .addClass("btn-outline-dark")
+                .addClass("btn-outline-secondary")
                 .html('<i class="bi bi-bookmark-plus me-1"></i>Add to Reading List');
         }
     }

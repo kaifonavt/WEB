@@ -1,0 +1,42 @@
+[
+  {
+    "id": "marvel-1",
+    "title": "The Infinity Gauntlet",
+    "universe": "Marvel",
+    "image": "../images/comics/infinity-gauntlet.jpg",
+    "alt": "The Infinity Gauntlet #1 cover",
+    "info": "1991 • Jim Starlin & George Pérez — Thanos wields all six Infinity Gems against Earth's mightiest heroes."
+  },
+  {
+    "id": "marvel-2",
+    "title": "Civil War",
+    "universe": "Marvel",
+    "image": "../images/comics/civil-war.jpg",
+    "alt": "Civil War #1 cover",
+    "info": "2006 • Mark Millar & Steve McNiven — The Superhuman Registration Act divides Iron Man and Captain America."
+  },
+  {
+    "id": "marvel-3",
+    "title": "Spider-Man: Kraven's Last Hunt",
+    "universe": "Marvel",
+    "image": "../images/comics/kravens-last-hunt.jpg",
+    "alt": "Kraven's Last Hunt comic cover",
+    "info": "1987 • J.M. DeMatteis & Mike Zeck — Sergei Kravinoff sets out to prove he is superior to Spider-Man."
+  },
+  {
+    "id": "marvel-4",
+    "title": "House of X / Powers of X",
+    "universe": "Marvel",
+    "image": "../images/comics/house-of-x.jpg",
+    "alt": "House of X #1 cover",
+    "info": "2019 • Jonathan Hickman & Pepe Larraz — Charles Xavier establishes the sovereign mutant nation of Krakoa."
+  },
+  {
+    "id": "marvel-5",
+    "title": "Iron Man: Demon in a Bottle",
+    "universe": "Marvel",
+    "image": "../images/comics/demon-in-a-bottle.jpg",
+    "alt": "The Invincible Iron Man #128 cover",
+    "info": "1979 • David Michelinie & Bob Layton — Tony Stark faces his toughest battle off the battlefield."
+  }
+]

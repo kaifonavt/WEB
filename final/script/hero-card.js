@@ -29,11 +29,10 @@ async function loadHeroes() {
             const tags = card.querySelector('[data-field="tags"]');
             for (const tag of hero.tags || []) {
                 const badge = document.createElement('span');
-                badge.className = 'badge bg-secondary-subtle text-dark border fw-normal';
+                badge.className = 'p-1 border fw-normal';
                 badge.textContent = tag;
                 tags.append(badge);
             }
-
             const link = card.querySelector('[data-field="link"]');
             link.href = hero.link || '#';
             link.textContent = hero.linkText || 'Learn more';

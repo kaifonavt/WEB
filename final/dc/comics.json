@@ -1,0 +1,42 @@
+[
+  {
+    "id": "dc-1",
+    "title": "Batman: The Dark Knight Returns",
+    "universe": "DC",
+    "image": "../images/comics/dark-knight-returns.jpg",
+    "alt": "Batman: The Dark Knight Returns #1 cover",
+    "info": "1986 • Frank Miller & Klaus Janson — An aging Bruce Wayne comes out of retirement to save a decaying Gotham City."
+  },
+  {
+    "id": "dc-2",
+    "title": "Watchmen",
+    "universe": "DC",
+    "image": "../images/comics/watchmen.jpg",
+    "alt": "Watchmen #1 cover",
+    "info": "1986 • Alan Moore & Dave Gibbons — A murder investigation uncovers a conspiracy among Cold War-era vigilantes."
+  },
+  {
+    "id": "dc-3",
+    "title": "All-Star Superman",
+    "universe": "DC",
+    "image": "../images/comics/all-star-superman.jpg",
+    "alt": "All-Star Superman #1 cover",
+    "info": "2005 • Grant Morrison & Frank Quitely — Overcharged by solar radiation, Superman completes twelve final labors."
+  },
+  {
+    "id": "dc-4",
+    "title": "Crisis on Infinite Earths",
+    "universe": "DC",
+    "image": "../images/comics/crisis-on-infinite-earths.jpg",
+    "alt": "Crisis on Infinite Earths #1 cover",
+    "info": "1985 • Marv Wolfman & George Pérez — Heroes across parallel realities unite to stop the Anti-Monitor."
+  },
+  {
+    "id": "dc-5",
+    "title": "Flashpoint",
+    "universe": "DC",
+    "image": "../images/comics/flashpoint.jpg",
+    "alt": "Flashpoint #1 cover",
+    "info": "2011 • Geoff Johns & Andy Kubert — Barry Allen wakes up in an altered timeline where the Justice League never formed."
+  }
+]
